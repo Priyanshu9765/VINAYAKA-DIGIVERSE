@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="first.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<<<<<<< HEAD
+  <video autoplay muted loop playsinline class="background-video">
+  <source src="assets/background image vdv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+=======
+>>>>>>> f689104 (Updated HTML file)
+
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" /> 
+    
+  </div>
+
+  <nav>
+  <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+        <li class="has-submenu">
+          <a href="Solutions/SMM&M.html">SOCIAL MEDIA  MARKETING</a>
+        </li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="Solutions/Website design.html">WEB
+DEVELOPMENT</a>
+        </li>
+
+        <!-- Custom Applications submenu -->
+        <li class="has-submenu">
+          <a href="Solutions/content writing.html">CONTENT WRITING</a>
+        </li>
+
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="Solutions/PROFESSIONAL GRAPHICS.html">GRAPHICS
+ DESIGNING </a>
+</li>
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="Solutions/professional photography.html"> PHOTOGRAPHY &
+ VIDEOGRAPHY </a>
+        </li>
+
+
+               <li class="has-submenu">
+         <a href="Solutions/PROFESSIONAL VIDEO EDITING.html"> VIDEO EDITING
+</a>
+       </li>
+
+      </ul>
+    </li>
+
+    
+    <li><a href="Blog/blog.html">Blogs</a></li>
+    <li><a href="Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="Contact us/contact.html">Get in touch</a></li>
+  </ul>
+  <div style="text-align: right;" class="hamburger" onclick="openSidebar()">☰</div>
+</nav>
+<!-- ✅ Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <ul class="mobile-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+    <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">Solutions ▾</a>
+      <ul class="mobile-dropdown-menu">
+        <li><a href="Solutions/SMM&M.html">Social Media Marketing</a></li>
+        <li><a href="Solutions/Website design.html">Web Development</a></li>
+        <li><a href="Solutions/content writing.html">Content Writing</a></li>
+        <li><a href="Solutions/PROFESSIONAL GRAPHICS.html">Graphics Designing</a></li>
+        <li><a href="Solutions/professional photography.html">Photography & Videography</a></li>
+        <li><a href="Solutions/PROFESSIONAL VIDEO EDITING.html">Video Editing</a></li>
+      </ul>
+    </li>
+    <li><a href="Blog/blog.html">Blogs</a></li>
+    <li><a href="Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</div>
+</header>
+
+<!--This is about us section-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Animated</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      /*background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);*/
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ABFF25;
+    }
+
+    @media (max-width: 768px) {
+      
+      .about-text h2{
+        font-size: small;
+      }
+      
+        
+      }
+    
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ABFF25;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+      
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ABFF25;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #ABFF25;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ABFF25;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ABFF25;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ABFF25;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #ABFF25;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ABFF25;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ABFF25;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+
+    #ab{
+      margin-top: 100px;
+    }
+
+    
+
+/*Background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.gut-section {
+  background-color: #ABFF25;
+  padding: 50px 30px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.gut-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 2px #55555533;
+}
+
+.gut-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.gut-left img {
+  width: 500px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.gut-right {
+  flex: 1;
+  max-width: 700px;
+}
+
+.gut-right p {
+  font-size: 1.5rem;
+  color: #111;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .gut-heading {
+    font-size: 2rem;
+  }
+
+  .gut-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gut-right {
+    text-align: center;
+  }
+}
+@media(max-width:450px){
+  .about-header h1{
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width:768px) {
+  .about-header h1{
+    font-size: 1.5rem !important;
+  }
+}
+@media(max-width:1024px){
+  .about-header h1{
+    font-size: 1.7rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <div class="about-header">
+    <h1>About <span>Us</span><br><br></h1> <h1 style="background-color: #000; padding: 10px; border-radius: 15px;"><span>VINAYAKA DIGIVERSE </span>A WORLD CLASS, TECH ELEGANT GROWTH IN DIGITAL MARKETING & MANAGEMENT AGENCY</h1>
+  </div>
+
+  <section class="about-section">
+    <div class="about-images">
+      <div class="img-box">
+        <img src="assets/17895167_5937119.svg" alt="Office Team">
+        <div class="project-badge">
+          <span class="icon">⚙</span>
+          112+ <br>Project Complete
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <h3>WHO WE ARE</h3>
+      <h2>We are a strategic growth company with <span> undeniable conviction.</span></h2> <br>
+      <p style="color: #fff;"> VINAYAKA is the DIGIVERSE of digital marketing firm that
+ operates at the intersection of data, technology, and
+ human intelligence to make profit predictable. In today’s
+ hyper-competitive, often volatile marketplace, average
+ results just won’t cut it. <br><br>
+ So if you’re looking for a digital marketing firm full of “yes
+ men,” well, you’ve come to the wrong place. Because we
+ take pride in being partners, consultants and strategists
+ who are unafraid to pursue what it takes to grow our clients’ businesses even if, at first, it takes some convincing. The  results have a way of taking care of the rest.</p>
+
+      <a href="Contact us/contact.html"><button class="btn">Contact Us</button></a>
+      <a href="Contact us/contact.html"><button class="btn btn-accent">→</button></a>
+    </div>
+     </section>
+<br><br>
+  <!--OUR APPROACH SECTION-->
+  <section class="gut-section">
+    <h1 style="font-size: 2.5rem; background-color: #000; border-radius: 15px; padding: 10px;">OUR APPROACH<h1> <br>
+  <h1 class="gut-heading">Welcome to the end of gut feelings</h1>
+  <div class="gut-row">
+    <div class="gut-left">
+      <img src="assets/7079651_3509464.svg" class="myimg" alt="Team analyzing data" />
+    </div>
+    <div class="gut-right">
+      <p><br>
+       <b> As a leading global digital marketing agency, we do everything in our power to quell uncertainty through total transparency.
+        We provide receipts for what’s driving business impact, believing in accountability versus obfuscation. Our unconventional approach integrates strategic consulting, data intelligence, channel expertise and proprietary technology enabling our teams to develop clear, actionable insights and activate high-performing digital marketing campaigns.</b>
+      </p>
+    </div>
+  </div>
+</section>
+<style>
+  @media(max-width: 768px){
+    .gut-left img{
+      margin: -100px;
+    }
+  }
+</style>
+
+<!--why us section-->
+<section class="benefits-section">
+  <div class="benefits-header">
+    <p class="section-label"><span class="dot"></span>WHY US</p>
+    <h2>Experience the <span class="highlight">advantage</span> of IT company</h2>
+  </div>
+
+  <!--list-->
+  <div class="vinayaka-difference">
+  <h2 class="vinayaka-heading">
+   <b>How is working with <span class="highlight">VINAYAKA</span> different?</b>
+  </h2>
+
+  <div class="vinayaka-grid">
+    <div class="vinayaka-box">
+      <img src="assets/businessman_4656170.png" alt="Experience Icon" />
+      <h3>EXPERIENCE</h3>
+      <p class="green-box">
+        Our expertise is shaped by the valuable insight gained from successfully partnering over 250+ clients.
+      </p>
+    </div>
+
+    <div class="vinayaka-box">
+      <img src="assets/statistic-bar_13983993.png" alt="Growth Icon" />
+      <h3>GROWTH</h3>
+      <p class="green-box">
+        Only high-caliber work. We will keep you informed with high-performance and progress reports. No ifs, ands, or buts.
+      </p>
+    </div>
+
+    <div class="vinayaka-box">
+      <img src="assets/analysis_6442169.png" alt="Results Icon" />
+      <h3>RESULTS</h3>
+      <p class="green-box">
+        Our data-driven method generates measurable transparent results which focus on your business success.
+      </p>
+    </div>
+
+    <div class="vinayaka-box">
+      <img src="assets/search_18047513.png" alt="Transparency Icon" />
+      <h3>TRANSPARENCY</h3>
+      <p class="green-box">
+        Radical Transparency VINAYAKA DIGIVERSE is a glass box that shows you everything and hides nothing.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  <h3 class="benefit-footer-text">Let’s make something great work together. Get Free Quote</h3>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fills = document.querySelectorAll(".progress-fill");
+    fills.forEach((fill) => {
+      const percentage = fill.getAttribute("data-percentage");
+      setTimeout(() => {
+        fill.style.width = percentage + "%";
+      }, 300);
+    });
+  });
+</script>
+
+<!--TEAM DESCRIPTION-->
+<section class="testimonials-section" id="testimonials">
+  <h2 class="testimonial-heading">Our Team</h2>
+  <div class="testimonial-carousel">
+    
+    <div class="testimonial-slide active">
+      <img src="./assets/Priyanshu.jpg" alt="Client 1">
+    
+      <p>"CO-FOUNDER"</p>
+      <h4>- PRIYANSHU BOREKAR</h4>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="./assets/navneet.jpg" alt="Client 2">
+
+      <p>"CO-FOUNDER"</p>
+      <h4>- NAVNEET PATIDAR</h4>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="./assets/ruhi.jpg" alt="Client 3">
+
+      <p>"CONTENT WRITER"</p>
+      <h4>- AAROHI PATIL</h4>
+    </div>
+
+    <div class="testimonial-slide">
+  <img src="./assets/zoya.jpg" alt="Client 4">
+  <p>"GRAPHIC DESIGNER"</p>
+  <h4>- ZOYA SIDDIQUE</h4>
+</div>
+
+    <div class="testimonial-slide">
+      <img src="./assets/founder.jpg" alt="Client 5">
+      <p>"FOUNDER"</p>
+      <h4>- RESHMA PATIDAR</h4>
+    </div>
+
+     <div class="testimonial-slide">
+   <img src="./assets/Pooja Patil.jpg" alt="Client 3">
+   <p>"MANAGER"</p>
+   <h4>- POOJA PATIL</h4>
+ </div>
+    <!-- Add more slides as needed -->
+
+    <button class="carousel-btn prev" onclick="prevTestimonial()">❮</button>
+
+    <button class="carousel-btn next" onclick="nextTestimonial()">❯</button>
+
+  </div>
+</section>
+
+<!--FAQ SECTION-->
+ <div class="faq-section">
+  <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>1. What does your IT company actually do?</h3>
+      <div class="faq-answer">
+        We help businesses grow using websites, apps, digital marketing, and secure technology solutions — all in one place.
+      </div>
+    </div>
+    <div class="faq-item">
+      <h3>2.How experienced is your team?</h3>
+      <div class="faq-answer">Our team has worked with many businesses over the years — from local shops to large companies. We know what works.</div>
+    </div>
+    <div class="faq-item">
+      <h3>3. Why should we trust your team?</h3>
+      <div class="faq-answer">Because we listen, we’re honest, and we do what we promise. Our goal is to make things simple and effective for you.</div>
+    </div>
+    <div class="faq-item">
+      <h3>4.Where are you located?</h3>
+      <div class="faq-answer">We’re based in India and work with clients from anywhere — online, fast, and reliable.</div>
+    </div>
+    <div class="faq-item">
+      <h3>5. Who can you help — small or big companies?</h3>
+      <div class="faq-answer">We work with everyone. Whether you're just starting or already growing, we’ll support your journey.</div>
+    </div>
+    <div class="faq-item">
+      <h3>6.  Will you understand my business needs?</h3>
+      <div class="faq-answer">Yes! We always start by understanding your business goals first — then we build the right solution.
+
+</div>
+    </div>
+    <div class="faq-item ">
+      <h3>7. Do I need to know anything about technology?</h3>
+      <div class="faq-answer">Nope! We handle all the tech stuff. You tell us your idea — we make it work.
+
+</div>
+    </div>
+    <div class="faq-item">
+      <h3>8.What makes your company different?</h3>
+      <div class="faq-answer">We treat every project like it’s our own, and we care about results — not just the design or code.
+
+</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function nextTestimonial() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  function prevTestimonial() {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  }
+
+  // Auto play every 3 seconds
+  setInterval(nextTestimonial, 4000);
+
+  // Initialize
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlide(current);
+  });
+</script>
+
+<!--Branding-->
+<section class="hero-brand">
+  <p class="hero-subtitle">LET'S COLLABORATE</p>
+    <h1 class="hero-title" style="font-size: 9rem;"> 
+    ELEVATE YOUR
+  </h1><br>
+  <h1 class="hero-title">
+ BRAND GAME
+</h1>
+  <a href="Contact us/contact.html" class="hero-button">
+    ↗<br />Get In Touch
+  </a>
+</section>
+
+<!--footer for address and all-->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="assets/vdv logo wb.png" alt="Logo" class="footer-logo" />
+      <div class="contact-box">
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+           
+            <p>vinayakadigiverse@gmail.com</p>
+          </div>
+        </div>
+
+         <div class="contact-row">
+   <div class="icon-circle phone">
+     <i class="fas fa-phone-alt"></i>
+   </div>
+   <div>
+     <p>Need help!</p>
+     <h3>+91–7083021583</h3>
+     <h3>+91–9039592878</h3>
+   </div>
+ </div>
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p>Branch 1:– INDORE - 452009 (M.P.) <br> <br>Branch 2:– NAGPUR - 440027 (M.H.)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <a href="index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+           <a href="Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+           
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+               <ul>
+        <a href="Solutions/SMM&M.html" style="color: white; text-decoration: none;" > <li>SOCIAL MEDIA MARKETING</li></a>
+         <a href="Solutions/Website design.html" style="color: white; text-decoration: none;" > <li>WEB DEVELOPMENT</li></a>
+          <a href="Solutions/content writing.html" style="color: white; text-decoration: none;"><li>CONTENT WRITING</li></a>
+          <a href="Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;"><li>GRAPHICS DESIGNING</li></a>
+          <a href="Solutions/professional photography.html" style="color: white; text-decoration: none;"><li>PHOTOGRAPHY & VIDEOGRAPHY</li></a>
+          <a href="Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;" > <li>VIDEO EDITING</li></a>
+    </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <a href="index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+          <a href="index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+          <a href="Contact us/contact.html" style="color: white; text-decoration: none;"><li>Contact Us</li></
+a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Vinayaka Digiverse All Rights Reserved.</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/annry_editx?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://pin.it/TRHvAUtrw" target="_blank">
+  <i class="fab fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&utm_campaign=share_via&
+utm_content=profile&utm_medium=android_app" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

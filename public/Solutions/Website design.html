@@ -1,0 +1,826 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../first.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <video autoplay muted loop playsinline class="background-video">
+  <source src="assets/background image vdv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="../assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
+    
+  </div>
+
+  <nav>
+  <ul class="navbar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+        <li class="has-submenu">
+          <a href="SMM&M.html">SOCIAL MEDIA
+ MARKETING </a>
+        </li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="Website design.html">WEB DEVELOPMENT</a>
+        </li>
+
+        <!-- Custom Applications submenu -->
+        <li class="has-submenu">
+          <a href="content writing.html">CONTENT WRITING 
+</a>
+        </li>
+
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="PROFESSIONAL GRAPHICS.html"> GRAPHICS
+ DESIGNING</a>
+</li>
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="professional photography.html">PHOTOGRAPHY &
+ VIDEOGRAPHY </a>
+        </li>
+
+
+               <li class="has-submenu">
+         <a href="PROFESSIONAL VIDEO EDITING.html"> VIDEO EDITING 
+ </a>
+       </li>
+
+      </ul>
+    </li>
+
+    
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+  <div style= "text-align:right; " class="hamburger" onclick="openSidebar()">☰</div>
+</nav>
+
+<!-- ✅ Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <ul class="mobile-menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+    <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">Solutions ▾</a>
+      <ul class="mobile-dropdown-menu">
+        <li><a href="SMM&M.html">Social Media Marketing</a></li>
+        <li><a href="Website design.html">Web Development</a></li>
+        <li><a href="content writing.html">Content Writing</a></li>
+        <li><a href="PROFESSIONAL GRAPHICS.html">Graphics Designing</a></li>
+        <li><a href="professional photography.html">Photography & Videography</a></li>
+        <li><a href="PROFESSIONAL VIDEO EDITING.html">Video Editing</a></li>
+      </ul>
+    </li>
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</div>
+</header>
+
+  <style>
+        body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .web-services {
+  font-size: 3rem;
+  color: #000;
+  
+}
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      /*background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);*/
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ABFF25;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ABFF25;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ABFF25;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #ABFF25;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ABFF25;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ABFF25;
+      margin-right: 10px;
+    }
+.features-list li{
+  text-align: left;
+}
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ABFF25;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #ABFF25;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ABFF25;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ABFF25;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+
+    #ab{
+      margin-top: 100px;
+    }
+
+    
+
+/*Background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.programming-column {
+  background: #fff;
+  border-radius: 20px;
+  padding: 5rem ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 30%;
+  max-width: 100px;
+  gap: 15px;
+  max-height: 400px;
+  
+  height: 100%;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.language-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-icons img {
+  width: 70px;
+  height: auto;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation:unset;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .social-media-service h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.4;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 12px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .features-list li {
+    font-size: 1rem;
+  }
+   .programming-column {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+   width: 100%;
+   max-width: 85px;
+   gap: 20px;
+   margin: 0;
+ }
+ .language-icons {
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+ }
+ .language-icons img {
+   width: 60px;
+   height: auto;
+ }
+ .vertical-text {
+   writing-mode: vertical-lr;
+   text-orientation: mixed;
+   font-size: 0.9rem;
+   margin-top: 0;
+   text-align: center;
+ }
+  
+}
+@media (max-width: 1024px) {
+  .about-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .social-media-service h1 {
+    font-size: 2.3rem !important;
+    padding: 10px;
+  }
+
+  .features-list li {
+    font-size: 1.95rem;
+  }
+}
+@media (max-width: 1024px) {
+  .programming-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 10px;
+    width: 100%;
+    max-width: 130px;
+    margin: auto;
+  }
+
+  .language-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .language-icons img {
+    width: 60px;
+    height: auto;
+  }
+
+  .vertical-text {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg); /* Flip to start from bottom going up */
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    color: black;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+  }
+.web-services {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #000;
+  padding-top: 1px ;
+
+}
+  .features-list {
+    flex: 1;
+    padding-right: 65px; /* enough space to avoid overlap */
+  }
+
+  .features-list li {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+
+  .sub-text {
+    font-size: 0.65rem;
+  }
+
+ 
+  .language-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .language-icons img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .social-media-service h1 {
+    font-size: 1.3rem !important;
+    padding: 8px;
+  }
+
+  .features-list li {
+    font-size: 0.95rem;
+  }
+
+  .language-icons img {
+    width: 50px;
+  }
+
+  .vertical-text {
+    
+    font-size: 0.8rem;
+  }
+  .programming-column {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 280px !important;
+    height: 90% !important;
+    max-width: 110px;
+    margin: 20px auto;
+    gap: 10px;
+   
+    background: white;
+    border-radius: 20px;
+  }
+
+  .language-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .language-icons img {
+    width: 40px !important;
+    height: auto;
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+   
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+ .web-services {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #000;
+  padding-top: 1px ;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+  <div class="about-header">
+    <h1>WEBSITE DESIGNING &
+ <br><span>WEBSITE MANAGEMENT</span></h1>
+
+ <section class="social-media-service">
+<h1 style="font-size: 3.5rem; color: #fff; text-align: center; background-color: #000; border-radius: 15px; 
+padding: 10px;">WEBSITE DESIGNING MANAGEMENT</h1><br/><br/>
+<h3 class="web-services">WEBSITE SERVICES</h3>
+<div class="content-container">
+<ul class="features-list">
+   <li>RESPONSIVE SINGLE/MULTI/LANDING PAGES</li>
+ <li>CUSTOM FORM BLOG SETUP & CUSTOMISATION</li>
+ <li>E-COMMERCE STORE SETUP</li>
+ <li>PRODUCTS MANAGEMENT & INVENTORY INTEGRATION</li>
+ <li>WEB. MAINTENANCE, HOSTING & MANAGEMENT</li>
+ <li>SEO OPTIMIZATION & GOOGLE ANALYTICS INTEGRATION</li>
+ <li>DOMAIN, HOSTING ASSISTANCE & SECURITY ENCHANTMENT</li>
+ <li>MULTI LANGUAGE SUPPORT & CUSTOM ANIMATIONS AN EFFECT</li>
+<li>
+        16 HIGH QUALITY CONTENT POST (MONTHLY)<br>
+<span class="sub-text" style="color: #000;">(INC. GRAPHIC / REEL / CAROUSEL &amp; FESTIVE POST)</span>
+</br></li>
+</ul>
+<div class="programming-column">
+<div class="language-icons">
+<img src="../assets/html-5_5968267.png" alt="HTML" />
+<img src="../assets/css-3_5968242.png" alt="CSS" />
+<img src="../assets/c81eb897ee8dba4297d9db2d84bae05b.png" alt="JS" />
+<img src="../assets/c-sharp_6132221.png" alt="C#" />
+</div>
+<div class="vertical-text">PROGRAMMING LANGUAGE</div>
+</div>
+</div>
+</section>
+
+  <!-- Bottom Box: Website UI Designs -->
+   <div class="ui-designs">
+  <h3 style="font-size: 2.7rem; color: #000; background-color: white; padding: 10px; border-radius: 20px;">WEBSITES UI DESIGNS</h3><br><br>
+  <div class="ui-gallery">
+    <div class="ui-column">
+      <img src="../assets/7436705_3562984.jpg" alt="UI 1" />
+      <img src="../assets/1000096015_051464c67bc47e14bd5e3c4d73a78f81-5_31_2025, 1_36_05 AM.jpg" alt="UI 2" />
+    </div>
+    <div class="ui-column">
+      <img src="../assets/1000096019_c7ad7faebefcaf7e6262828614364e53-5_31_2025, 1_35_41 AM.jpg" alt="UI 3" />
+      <img src="../assets/1000096018_d5c4b7f8bd03a9fa56f7e07a42ecb68d-5_31_2025, 1_35_46 AM.jpg" alt="UI 4" />
+    </div>
+
+     <div class="ui-column">
+   <img src="../assets/1000096017_efc7800837d679f42e3325b4e085df20-5_31_2025, 1_35_50 AM.jpg" alt="UI 5" />
+ </div>
+ <div class="ui-column">
+   <img src="../assets/1000096020_54c0803eb8692a302e613c371650b052-5_31_2025, 1_37_39 AM.jpg" alt="UI 6" />
+ </div>
+  </div>
+</div>
+
+<section>
+  <!--FAQ SECTION-->
+ <div class="faq-section">
+  <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>1.What web development services do you offer?</h3>
+      <div class="faq-answer">We offer custom website development, responsive web design, eCommerce development, CMS integration, landing page design, and full-stack development solutions.</div>
+    </div>
+    <div class="faq-item">
+      <h3>2. Do you build mobile-friendly and responsive websites?</h3>
+      <div class="faq-answer">Yes. All our websites are fully responsive and mobile-optimized, ensuring smooth performance and clean design on smartphones, tablets, and desktops.</div>
+    </div>
+    <div class="faq-item">
+      <h3>3. Can you develop SEO-friendly websites?</h3>
+      <div class="faq-answer"> Absolutely. We build websites with clean code, fast loading times, proper heading structure, meta tags, and schema markup for better search engine ranking.</div>
+    </div>
+    <div class="faq-item">
+      <h3>4. Do you create both static and dynamic websites?</h3>
+      <div class="faq-answer">Yes, we develop both. Whether you need a simple static site or a dynamic, database-driven platform, we tailor the build to your business goals.</div>
+    </div>
+    <div class="faq-item">
+      <h3>5. Which platforms and technologies do you use?</h3>
+      <div class="faq-answer">We work with HTML, CSS, JavaScript, React, Node.js, PHP, WordPress, Shopify, and more—choosing the best tech stack based on your project.</div>
+    </div>
+    <div class="faq-item">
+      <h3>6.How long does it take to develop a website?</h3>
+      <div class="faq-answer">It depends on your website’s complexity. On average, a standard business website takes 2–4 weeks, while custom or eCommerce sites may take longer.</div>
+    </div>
+    <div class="faq-item">
+      <h3>7.  Will I be able to update the website myself later?</h3>
+      <div class="faq-answer">Yes. We can integrate CMS platforms like WordPress or provide an admin panel so you can easily update content, images, or blog posts on your own.</div>
+    </div>
+    <div class="faq-item">
+      <h3>8. How do I start a web development project with your team?</h3>
+      <div class="faq-answer">Simply reach out via our contact form or call us. We’ll schedule a free consultation to understand your needs and provide a detailed quote.</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+<!--Branding-->
+<section class="hero-brand">
+<p class="hero-subtitle">LET'S COLLABORATE</p>
+<h1 class="hero-title" style="font-size: 9rem;"> 
+    ELEVATE YOUR
+  </h1><br/>
+<h1 class="hero-title">
+ BRAND GAME
+</h1>
+<a class="hero-button" href="Contact us/contact.html">
+    ↗<br>Get In Touch
+  </br></a>
+</section>
+<!--footer for address and all-->
+<footer class="custom-footer" style="text-align: left;"> 
+<div class="footer-container">
+<div class="footer-left">
+<img alt="Logo" class="footer-logo" src="../assets/vdv logo wb.png">
+<div class="contact-box">
+<div class="contact-row">
+<div class="icon-circle">
+<i class="fas fa-envelope"></i>
+</div>
+<div>
+<p>vinayakadigiverse@gmail.com</p>
+</div>
+</div>
+<div class="contact-row">
+<div class="icon-circle phone">
+<i class="fas fa-phone-alt"></i>
+</div>
+<div>
+<p>Need help!</p>
+<h3>+91–7083021583</h3>
+<h3>+91–9039592878</h3>
+</div>
+</div>
+<div class="contact-row">
+<div class="icon-circle">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<p>Branch 1:– INDORE - 452009 (M.P.) <br/><br/>Branch 2:– NAGPUR - 440027 (M.H.)</p>
+</div>
+</div>
+</img></div>
+<div class="footer-links">
+<div>
+<h4>Quick Link</h4>
+<ul>
+<a href="index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+<a href="about-us.html" style="color: white; text-decoration: none;"><li>About Us</li></a>
+<a href="Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+<a href="Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+</ul>
+</div>
+<div>
+<h4>Services</h4>
+<ul>
+<ul>
+<a href="../Solutions/SMM&amp;M.html" style="color: white; text-decoration: none;"> <li>SOCIAL MEDIA 
+MARKETING</li></a>
+<a href="../Solutions/Website design.html" style="color: white; text-decoration: none;">
+<li>WEB DEVELOPMENT</li></a>
+<a href="../Solutions/content writing.html" style="color: white; text-decoration: none;
+"><li>CONTENT WRITING</li></a>
+<a href="../Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;
+"><li>GRAPHICS DESIGNING</li></a>
+<a href="../Solutions/professional photography.html" style="color: white; text-decoration: none;
+"><li>PHOTOGRAPHY &amp; VIDEOGRAPHY</a>
+<a href="../Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;">
+<li>VIDEO EDITING</li></a>
+</ul>
+</ul></div>
+<div>
+<h4>Support</h4>
+<ul>
+<a href="../index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+<a href="../index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+<a href="../Contact us/contact.html" style="color: white; text-decoration: none;"><li>Contact Us</li></a>
+</ul>
+</div>
+</div>
+</div>
+
+  <div class="footer-bottom">
+    <p>© Vinayaka Digiverse All Rights Reserved.</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/annry_editx?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://pin.it/TRHvAUtrw" target="_blank">
+  <i class="fab fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&utm_campaign=share_via&
+utm_content=profile&utm_medium=android_app" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+</div>
+</footer>
+<script>
+  function openSidebar() {
+    document.getElementById('mobileSidebar').classList.add('show');
+  }
+
+  function closeSidebar() {
+    document.getElementById('mobileSidebar').classList.remove('show');
+  }
+
+  function toggleSidebarDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.target.closest('.mobile-dropdown');
+    dropdown.classList.toggle('open');
+  }
+</script>
+ 
+
+</body>
+</html>

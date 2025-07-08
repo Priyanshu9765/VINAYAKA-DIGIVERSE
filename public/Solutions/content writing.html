@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../first.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <video autoplay muted loop playsinline class="background-video">
+  <source src="assets/background image vdv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="../assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
+   
+    
+  </div>
+
+  <nav>
+  <ul class="navbar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+        <li class="has-submenu">
+          <a href="SMM&M.html">SOCIAL MEDIA  MARKETING</a>
+        </li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="Website design.html">WEB DEVELOPMENT</a>
+        </li>
+
+        <!-- Custom Applications submenu -->
+        <li class="has-submenu">
+          <a href="content writing.html">CONTENT WRITING
+ </a>
+        </li>
+
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="PROFESSIONAL GRAPHICS.html">GRAPHICS
+ DESIGNING</a>
+</li>
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="professional photography.html">PHOTOGRAPHY &
+ VIDEOGRAPHY </a>
+        </li>
+
+
+               <li class="has-submenu">
+         <a href="PROFESSIONAL VIDEO EDITING.html"> VIDEO EDITING 
+</a>
+       </li>
+
+      </ul>
+    </li>
+
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+  <div style= "text-align:right; " class="hamburger" onclick="openSidebar()">☰</div>
+</nav>
+
+<!-- ✅ Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <ul class="mobile-menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+    <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">Solutions ▾</a>
+      <ul class="mobile-dropdown-menu">
+        <li><a href="SMM&M.html">Social Media Marketing</a></li>
+        <li><a href="Website design.html">Web Development</a></li>
+        <li><a href="content writing.html">Content Writing</a></li>
+        <li><a href="PROFESSIONAL GRAPHICS.html">Graphics Designing</a></li>
+        <li><a href="professional photography.html">Photography & Videography</a></li>
+        <li><a href="PROFESSIONAL VIDEO EDITING.html">Video Editing</a></li>
+      </ul>
+    </li>
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</div>
+</header>
+
+<!--This is about us section-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Animated</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      /*background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);*/
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ABFF25;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ABFF25;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ABFF25;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #ABFF25;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ABFF25;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ABFF25;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ABFF25;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #ABFF25;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ABFF25;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ABFF25;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+
+    #ab{
+      margin-top: 100px;
+    }
+
+    
+
+/*Background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+@media(max-width:400px){
+  .about-header h1{
+    font-size:1.5rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <div class="about-header">
+    <h1>CONTENT WRITING & <br><span>CONTENT CREATION</span></h1>
+   
+  </div>
+
+  <section class="page-6">
+
+  <!-- Section 1: What is Content Writing -->
+  <div class="section layout-left">
+    <div class="text">
+      <h2>WHAT IS CONTENT <span>WRITING?</span></h2>
+      <p>Content writing is the process of planning, writing, and editing content to communicate ideas and information to the audience. The professionals involved can have titles like content strategist, content writer, or content marketing manager. Their shared goal is to identify relevant topics, create engaging content, and share it with their audience.</p>
+    </div>
+    <div class="image">
+      <img src="../assets/blogging-concept-with-man.png" alt="Content Writing">
+    </div>
+  </div>
+
+  <!-- Section 2: What is Content Creation -->
+  <div class="section layout-right">
+    <div class="image">
+      <img src="../assets/11434263_4706357.jpg" alt="Content Creation">
+    </div>
+    <div class="text">
+      <h2 class="th2">WHAT IS CONTENT <span>CREATION?</span></h2>
+      <p>Content creation is the process of developing and sharing media in various formats to reach and engage your target audience. <br style="text-align: left;"> Ideally, your content should solve your audience's
+ problems, answer their questions, and/or entertain
+ them. The professionals involved in content creation
+ can have various job titles like content strategist,
+ content writer, or content marketing manager. 
+Their shared goal is to identify relevant topics, create
+ engaging content, and share it with their audience.
+</p>
+    </div>
+  </div>
+
+  <!-- Section 3: Types of Content We Do -->
+  <div class="section-full">
+    <h2>TYPES OF CONTENT WRITING & CREATION WE DO</h2>
+    <b><ul>
+      <li>Blog</li>
+      <li>SOCIAL MEDIA</li>
+      <li>VIDEO CREATION</li>
+      <li>ARTICLES</li>
+      <li>INFOGRAPHS</li>
+      <li>PRODUCTS DESCRIPTION</li>
+      <li>COPY WRITING</li>
+      <li>MOTION ADS</li>
+      <li>VIDEO SCRIPTING</li>
+      <li>CONTENT PHOTOGRAPHY</li>
+      <li>WEB HANDLING PAGES</li>
+      <li>AND MUCH MORE</li>
+    </ul></b>
+  </div>
+
+</section>
+<style>
+  .page-6 {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  
+  color: #111;
+}
+.section-full h2{
+   background-color: #fff;
+   padding: 10px ;
+    border-radius: 15px;
+     font-size: 2.8rem;
+}
+/* Side-by-side layout */
+.section {
+  display: flex;
+  background-color: #000;
+  padding: 8%;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+.th2{
+  color: #000;
+}
+.layout-left .text {
+  order: 1;
+}
+.layout-left .image {
+  order: 2;
+}
+.layout-right .text {
+  order: 2;
+}
+.layout-right .image {
+  order: 1;
+}
+.section.layout-right {
+  background-color: #fff;
+} 
+
+.section.layout-right .text p{
+color: #000;
+font-size: 1.5rem;
+}
+.text {
+  flex: 1;
+  min-width: 280px;
+  color: #fff;
+}
+
+.image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #fff;
+}
+span{
+  color: grey;
+}
+/* Full Width Section */
+.section-full {
+  background-color: #ABFF25;
+ padding: 40px 30px;
+
+  border-radius: 20px;
+  text-align: center;
+  
+}
+
+.section-full h2 {
+  margin-bottom: 30px;
+
+}
+
+.section-full ul {
+  text-align: left;
+  column-count: 2;           /* 🔥 This splits it into 2 columns */
+  column-gap: 40px;          /* spacing between columns */
+  font-size: 1.6rem;
+  line-height: 2;
+  list-style-position: inside;
+  padding-left: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+  .section-full ul {
+    
+    column-count: 1;
+  }
+  .section-full h2{
+    font-size: 2rem;
+  }
+}
+
+
+  .text, .image {
+    order: unset !important;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-full h2 {
+    font-size: 1.3rem;
+  }
+
+  .section-full ul {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+}
+@media (max-width:400px) {
+  .section-full h2{
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width:480px) {
+  .about-header h1{
+    font-size: 1.6rem;
+  }
+  .section-full h2{
+    font-size: 1.3rem;
+  }
+}
+</style>
+
+<section>
+  <!--FAQ SECTION-->
+ <div class="faq-section">
+  <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>1. What types of content writing services do you offer?</h3>
+      <div class="faq-answer">We provide SEO content writing, website content, blog articles, product descriptions, landing page copy, email marketing content, and social media captions—all tailored to your brand voice.</div>
+    </div>
+    <div class="faq-item">
+      <h3>2.How do you ensure content is SEO-friendly?</h3>
+      <div class="faq-answer">We use keyword research, proper heading structure (H1–H3), meta descriptions, internal linking, and optimized formatting to boost search visibility and rank higher on Google.</div>
+    </div>
+    <div class="faq-item">
+      <h3>3. Do you offer 24/7 support for content revisions?</h3>
+      <div class="faq-answer">Yes, our team is available round-the-clock for urgent edits and revisions to ensure your content always meets your expectations and deadlines.</div>
+    </div>
+    <div class="faq-item">
+      <h3>4.Can you create content for technical or niche industries?</h3>
+      <div class="faq-answer">
+Absolutely. Our writers specialize in multiple industries including IT, healthcare, finance, education, real estate, and eCommerce—delivering accurate, engaging, and niche-relevant content.</div>
+    </div>
+    <div class="faq-item">
+      <h3>5. Can you work with businesses of all sizes?</h3>
+      <div class="faq-answer">Yes. Whether you're a startup building your first site, a marketing agency outsourcing content, or a large enterprise scaling digital strategy—we can deliver high-quality content at scale.</div>
+    </div>
+    <div class="faq-item">
+      <h3>6. What industries do you specialize in?</h3>
+      <div class="faq-answer">We specialize in healthcare, finance, education, manufacturing, and retail.
+    </div>
+    </div>
+    <div class="faq-item">
+      <h3>7. How do your pricing plans work?</h3>
+      <div class="faq-answer">Our pricing plans are flexible and transparent, designed to fit budgets. We offer detailed proposals after assessing your specific needs.</div>
+    </div>
+    <div class="faq-item">
+      <h3>8. How can I get started?</h3>
+      <div class="faq-answer">Get in touch through our contact page or call us directly to schedule a free 
+consultation.</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+</section>
+
+<!--Branding-->
+<section class="hero-brand">
+  <p class="hero-subtitle">LET'S COLLABORATE</p>
+  <h1 class="hero-title" style="font-size: 9rem;"> 
+    ELEVATE YOUR
+  </h1><br>
+  <h1 class="hero-title">
+ BRAND GAME
+</h1>
+  <a href="Contact us/contact.html" class="hero-button">
+    ↗<br/>Get In Touch
+  </a>
+</section>
+
+
+<!--footer for address and all-->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="../assets/vdv logo wb.png" alt="Logo" class="footer-logo" />
+      <div class="contact-box">
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+           
+            <p style="font-size: 1.2rem;">vinayakadigiverse@gmail.com</p>
+          </div>
+        </div>
+
+         <div class="contact-row">
+   <div class="icon-circle phone">
+     <i class="fas fa-phone-alt"></i>
+   </div>
+   <div>
+     <p>Need help!</p>
+     <h3>+91–7083021583</h3>
+     <h3>+91–9039592878</h3>
+   </div>
+ </div>
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p style="font-size: 1rem;" >Branch 1:– INDORE - 452009 (M.P.) <br>Branch 2:– NAGPUR - 440027 (M.H.)<p>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="../about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="../Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+           <a href="../Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+           
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+         <a href="../Solutions/SMM&M.html" style="color: white; text-decoration: none;" > <li>SOCIAL MEDIA MARKETING</li></a>
+          <a href="../Solutions/Website design.html" style="color: white; text-decoration: none;" > <li>WEB DEVELOPMENT</li></a>
+
+           <a href="../Solutions/content writing.html" style="color: white; text-decoration: none;"><li>CONTENT WRITING</li></a>
+           <a href="../Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;"><li>GRAPHICS DESIGNING</li></a>
+           <a href="../Solutions/professional photography.html" style="color: white; text-decoration: none;"><li>PHOTOGRAPHY & VIDEOGRAPHY</li></a>
+
+           <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;" > 
+<li>VIDEO EDITING</li></a>
+     </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+          <a href="../Contact us/contact.html " style="color: white; text-decoration: none;"><li>Contact Us</li></a>
+       </ul>
+     </div>
+   </div>
+ </div>
+  <div class="footer-bottom">
+    <p>© Vinayaka Digiverse All Rights Reserved.</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/annry_editx?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://pin.it/TRHvAUtrw" target="_blank">
+  <i class="fab fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&utm_campaign=share_via&
+utm_content=profile&utm_medium=android_app" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+</div>
+</footer>
+
+<script>
+  function openSidebar() {
+    document.getElementById('mobileSidebar').classList.add('show');
+  }
+
+  function closeSidebar() {
+    document.getElementById('mobileSidebar').classList.remove('show');
+  }
+
+  function toggleSidebarDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.target.closest('.mobile-dropdown');
+    dropdown.classList.toggle('open');
+  }
+</script>
+
+
+</body>
+</html>

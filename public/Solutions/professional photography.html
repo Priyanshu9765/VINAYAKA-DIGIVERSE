@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../first.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <video autoplay muted loop playsinline class="background-video">
+  <source src="assets/background image vdv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="../assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
+    
+  </div>
+
+  <nav>
+  <ul class="navbar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+        <li class="has-submenu">
+          <a href="SMM&M.html">SOCIAL MEDIA 
+              MARKETING</a>
+        </li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="Website design.html">WEB DEVELOPMENT
+          </a>
+        </li>
+
+        <!-- Custom Applications submenu -->
+        <li class="has-submenu">
+          <a href="content writing.html">CONTENT WRITING 
+            </a>
+        </li>
+
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="PROFESSIONAL GRAPHICS.html"> GRAPHICS
+ DESIGNING</a>
+</li>
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="professional photography.html"> PHOTOGRAPHY &
+ VIDEOGRAPHY </a>
+        </li>
+
+
+               <li class="has-submenu">
+         <a href="PROFESSIONAL VIDEO EDITING.html">VIDEO EDITING 
+</a>
+       </li>
+
+      </ul>
+    </li>
+
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+  <div style= "text-align:right; " class="hamburger" onclick="openSidebar()">☰</div>
+</nav>
+
+<!-- ✅ Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <ul class="mobile-menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+    <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">Solutions ▾</a>
+      <ul class="mobile-dropdown-menu">
+        <li><a href="SMM&M.html">Social Media Marketing</a></li>
+        <li><a href="Website design.html">Web Development</a></li>
+        <li><a href="content writing.html">Content Writing</a></li>
+        <li><a href="PROFESSIONAL GRAPHICS.html">Graphics Designing</a></li>
+        <li><a href="professional photography.html">Photography & Videography</a></li>
+        <li><a href="PROFESSIONAL VIDEO EDITING.html">Video Editing</a></li>
+      </ul>
+    </li>
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</div>
+</header>
+
+<!--This is about us section-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Animated</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .about-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: white;
+  padding: 0 10px;
+}
+
+.about-header span {
+  color: #ABFF25;
+}
+/* ===== Desktop Defaults (Already good) ===== */
+.main-heading {
+  font-size: 3rem;
+  
+  line-height: 1.3;
+  text-align: center;
+  color: white;
+}
+
+.main-heading span {
+  color: #ABFF25;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+
+.section-subheading {
+  color: rgb(21, 0, 71); /* violet */
+ margin-top: 1%;
+ text-align: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+/* ===== Mobile & Tablet Fixes ===== */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 1.2rem;
+    padding: 0 15px;
+    
+  }
+
+  .main-heading span {
+    font-size: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+    margin-top: 15px;
+  }
+
+  .section-subheading {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(21, 0, 71);
+    padding: 0 10px;
+  }
+}
+
+/* 📱 Make it mobile-friendly */
+
+    @media (max-width: 768px) {
+       .about-header h1 {
+   font-size: 1.6rem;
+   line-height: 1.4;
+   padding: 0 15px;
+   word-break: break-word;
+ }
+ .about-header span {
+   display: inline-block;
+   font-size: 1.5rem;
+ }
+
+  .page-6 {
+    padding: 20px;
+  }
+
+  .section.layout-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .section.layout-left .text {
+    order: 2;
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .section.layout-left .image {
+    order: 1;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .section.layout-left .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .section-heading {
+    font-size: 1.2rem !important;
+    margin-left: 0 !important;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      /*background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);*/
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ABFF25;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ABFF25;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ABFF25;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #ABFF25;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ABFF25;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ABFF25;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ABFF25;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #ABFF25;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ABFF25;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ABFF25;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+
+    #ab{
+      margin-top: 100px;
+    }
+
+    
+@media (max-width:450px) {
+  .about-header h1{
+  font-size: 1.5rem !important;
+}}
+/*Background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.gut-section {
+  background-color: #ABFF25;
+  padding: 50px 30px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.gut-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 2px #55555533;
+}
+
+.gut-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.gut-left img {
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.gut-right {
+  flex: 1;
+  max-width: 700px;
+}
+
+.gut-right p {
+  font-size: 1.4rem;
+  color: #111;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .about-header h1{
+    font-size: 2.4rem;
+  }
+  .gut-heading {
+    font-size: 2rem;
+  }
+
+  .gut-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gut-right {
+    text-align: center;
+  }
+}
+/* Default: keep the left-shifted style on large screens */
+.commercial-heading {
+  color: rgb(21, 0, 71);
+  margin-left: -210px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Mobile/tablet fix */
+@media (max-width: 768px) {
+  .commercial-heading {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0 10px;
+  }
+}
+.main-heading{
+  font-size: 2.5rem;
+   background-color: #000;
+    border-radius: 25px; 
+    padding: 1%;
+}
+  </style>
+</head>
+<body>
+<div class="about-header">
+  <h1 class="main-heading">
+    PROFESSIONAL PHOTOGRAPHY, <br>
+    <span>VIDEOGRAPHY & CINEMATOGRAPHY</span>
+  </h1>
+</div>
+<h2 style="text-align: center;">SERVICES</h2>
+
+<section class="page-6">
+  <h2 class="section-subheading">COMMERCIAL PHOTOGRAPHY & VIDEOGRAPHY</h2>
+
+
+  <div class="section layout-left">
+    <div class="text">
+      <b><p>
+        Commercial photography and videography involve capturing high-quality visuals tailored to promote a
+        brand, product, or service. These visuals are strategically crafted to enhance marketing campaigns,
+        advertisements, corporate identity, and social media presence. From product shoots, corporate profiles,
+        real estate, and food photography to promotional videos and commercials every frame is designed to
+        drive engagement, communicate value, and elevate the brand image.
+      </p></b>
+    </div>
+    <div class="image">
+      <img src="../assets/12376837_4892805.svg" alt="Content Writing">
+    </div>
+  </div>
+</section>
+
+<section class="our-work">
+  <h2>OUR WORK</h2>
+  <div class="work-gallery">
+    <img src="../assets/will-suddreth-mgweTPIa2Pc-unsplash.jpg" alt="Work 1" />
+    <img src="../assets/lhar-capili-ElEkBDYiHrQ-unsplash.jpg" alt="Work 2" />
+    <img src="../assets/Image-266.jpg" style="height: 300px;" alt="Work 3" />
+    <img src="../assets/declan-cronin-3iAoCHjek54-unsplash.jpg" alt="Work 4" />
+    <img src="../assets/tuan-nguyen-AuDD-ejVWLA-unsplash.jpg" alt="Work 5" />
+    <img src="../assets/tanvir-himel-ALuk0Lx0pwo-unsplash.jpg" alt="Work 6" />
+    <img src="../assets/farhad-ibrahimzade-riAWU4Xym9M-unsplash.jpg" alt="Work 7" />
+    <img src="../assets/muhammad-hadi-H830f3hygIU-unsplash.jpg" alt="Work 8" />
+    <img src="../assets/Screenshot 2025-06-15 145824.png" alt="Work 9" />
+    <img src="../assets/sayan-majhi-bQncpGVZ4RU-unsplash.jpg" alt="Work 10" />
+    <img src="../assets/hemant-kanojiya-Ww5jTiOCcug-unsplash.jpg" style="height: 300px;" alt="Work 11" />
+    <img src="../assets/febryan-chandra-gunawan-bRpNwo_i06o-unsplash.jpg" alt="Work 12" />
+  </div>
+</section>
+
+  <style>
+    .our-work {
+  padding: 60px 20px;
+  background: #111; /* dark background */
+  text-align: center;
+}
+
+.our-work h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work-gallery img {
+  width: 100%;
+  height: 300px;
+  min-height: 300px;
+  
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+
+/* 📱 Responsive for tablets */
+@media (max-width: 992px) {
+  .work-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about-header h1{
+    font-size: 2.5rem;
+  }
+}
+
+/* 📱 Responsive for medium devices */
+@media (max-width: 768px) {
+  .work-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📱 Responsive for small devices */
+@media (max-width: 480px) {
+  .work-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .our-work h2 {
+    font-size: 2rem;
+  }
+}
+
+    
+  .page-6 {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  
+  color: #111;
+}
+
+/* Side-by-side layout */
+.section {
+  display: flex;
+  background-color: rgb(89, 87, 162);
+  padding: 8%;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+.th2{
+  color: #000;
+}
+.layout-left .text {
+  order: 1;
+}
+.layout-left .image {
+  order: 2;
+}
+.layout-right .text {
+  order: 2;
+}
+.layout-right .image {
+  order: 1;
+}
+.section.layout-right {
+  background-color: #fff;
+} 
+
+.section.layout-right .text p{
+color: #000;
+font-size: 1.5rem;
+}
+.text {
+  flex: 1;
+  min-width: 280px;
+  color: #fff;
+}
+
+.image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #fff;
+}
+span{
+  color: grey;
+}
+.section-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: -100px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-6 {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: rgb(89, 87, 162);
+  color: #fff;
+  border-radius: 25px;
+}
+
+/* Full Width Section */
+.section-full {
+  background-color: #ABFF25;
+ padding: 40px 30px;
+
+  border-radius: 20px;
+  text-align: center;
+  
+}
+
+.section-full h2 {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+.section-full ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .text, .image {
+    order: unset !important;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-full h2 {
+    font-size: 1.3rem;
+  }
+
+  .section-full ul {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+}
+
+</style>
+<section>
+  <!--FAQ SECTION-->
+ <div class="faq-section">
+  <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>1.What photography and videography services do you offer?</h3>
+      <div class="faq-answer">We offer event photography, corporate shoots, promotional videos, product photography, real estate visuals, drone videography, and social media content creation.</div>
+    </div>
+    <div class="faq-item">
+      <h3>2. Do you provide high-resolution images and professionally edited videos?</h3>
+      <div class="faq-answer">Yes. All photos are delivered in high resolution, and videos are professionally edited with color correction, transitions, music, and titles based on your project requirements.</div>
+    </div>
+    <div class="faq-item">
+      <h3>3. Do you offer on-site shoots and location coverage?</h3>
+      <div class="faq-answer">Absolutely! We travel to your desired location for on-site shoots and provide complete setup including lighting, cameras, and drones (if needed).</div>
+    </div>
+    <div class="faq-item">
+      <h3>4.  Can you shoot for social media content and reels?</h3>
+      <div class="faq-answer">Yes. We create optimized content for Instagram Reels, YouTube Shorts, TikTok, and other platforms—designed to grab attention and boost engagement.</div>
+    </div>
+    <div class="faq-item">
+      <h3>5. Can you work with individuals, startups, and large companies?</h3>
+      <div class="faq-answer">Yes. Whether you’re an influencer, a small brand, or a large enterprise—we offer customized visual content that suits your goals and audience.</div>
+    </div>
+    <div class="faq-item">
+      <h3>6.What industries do you serve with your photography and videography?</h3>
+      <div class="faq-answer">We serve industries like fashion, food, real estate, events, education, healthcare, and corporate—delivering visuals that tell your brand story effectively.</div>
+    </div>
+    <div class="faq-item ">
+      <h3>7. How do your pricing packages work?</h3>
+      <div class="faq-answer">Our pricing is based on shoot duration, location, post-production needs, and deliverables. We offer clear, customized quotes after understanding your project scope.</div>
+    </div>
+    <div class="faq-item">
+      <h3>8.  How can I book a shoot with your team?</h3>
+      <div class="faq-answer">Just visit our contact page or call us directly. We'll discuss your vision, plan the shoot, and take care of everything from pre-production to delivery.
+
+</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+</section>
+<!--Branding-->
+<section class="hero-brand">
+  <p class="hero-subtitle">LET'S COLLABORATE</p>
+  <h1 class="hero-title" style="font-size: 9rem;"> 
+    ELEVATE YOUR
+  </h1><br>
+  <h1 class="hero-title">
+ BRAND GAME
+</h1>
+  <a href="Contact us/contact.html" class="hero-button">
+    ↗<br />Get In Touch
+  </a>
+</section>
+
+<!--footer for address and all-->
+
+<footer class="custom-footer">
+ <div class="footer-container">
+  <div class="footer-left">
+   <img alt="Logo" class="footer-logo" src="../assets/vdv logo wb.png">
+    <div class="contact-box">
+     <div class="contact-row">
+      <div class="icon-circle">
+       <i class="fas fa-envelope">
+       </i>
+      </div>
+      <div>
+       <p style="font-size: 1.2rem !important;">
+        vinayakadigiverse@gmail.com
+       </p>
+      </div>
+     </div>
+     <div class="contact-row">
+      <div class="icon-circle phone">
+       <i class="fas fa-phone-alt">
+       </i>
+      </div>
+      <div>
+       <p>
+        Need help!
+       </p>
+       <h3>
+        +91–7083021583
+       </h3>
+       <h3>
+        +91–9039592878
+       </h3>
+      </div>
+     </div>
+     <div class="contact-row">
+      <div class="icon-circle">
+       <i class="fas fa-map-marker-alt">
+       </i>
+      </div>
+      <p style="font-size: 1rem !important;">
+       Branch 1:– INDORE - 452009 (M.P.)
+       <br/>
+       Branch 2:– NAGPUR - 440027 (M.H.)
+      </p>
+     </div>
+    </div>
+   </img>
+  </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="../about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="../Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+           <a href="../Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+           
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+         <a href="../Solutions/SMM&M.html" style="color: white; text-decoration: none;" > <li>SOCIAL MEDIA MARKETING</li></a>
+          <a href="../Solutions/Website design.html" style="color: white; text-decoration: none;" > 
+<li>WEB DEVELOPMENT</li></a>
+
+           <a href="../Solutions/content writing.html" style="color: white; text-decoration: none;"><li>CONTENT WRITING</li></a>
+           <a href="../Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;"><li>GRAPHICS DESIGNING</li></a>
+           <a href="../Solutions/professional photography.html" style="color: white; text-decoration: none;
+"><li>PHOTOGRAPHY & VIDEOGRAPHY</li></a>
+
+           <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;"> 
+<li>VIDEO EDITING</li></a>
+     </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+          <a href="../Contact us/contact.html " style="color: white; text-decoration: none;"><li>Contact Us</li></a>
+       </ul>
+     </div>
+   </div>
+ </div>
+
+  <div class="footer-bottom">
+    <p>© Vinayaka Digiverse All Rights Reserved.</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/annry_editx?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://pin.it/TRHvAUtrw" target="_blank">
+  <i class="fab fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&utm_campaign=share_via&
+utm_content=profile&utm_medium=android_app" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

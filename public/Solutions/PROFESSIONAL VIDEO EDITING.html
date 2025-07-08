@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../first.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="../assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
+    
+  </div>
+
+  <nav>
+  <ul class="navbar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/SMM&M.html">SOCIAL MEDIA
+             MARKETING</a>
+        </li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/Website design.html">WEB DEVELOPMENT
+ </a>
+        </li>
+
+        <!-- Custom Applications submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/content writing.html">CONTENT WRITING 
+</a>
+        </li>
+
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="../Solutions/PROFESSIONAL GRAPHICS.html">GRAPHICS
+ DESIGNING</a>
+</li>
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/professional photography.html">  PHOTOGRAPHY &
+ VIDEOGRAPHY </a>
+        </li>
+
+
+               <li class="has-submenu">
+         <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html">VIDEO EDITING 
+ </a>
+       </li>
+
+      </ul>
+    </li>
+
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+  <div style= "text-align:right; " class="hamburger" onclick="openSidebar()">☰</div>
+</nav>
+<!-- ✅ Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <ul class="mobile-menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+    <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">Solutions ▾</a>
+      <ul class="mobile-dropdown-menu">
+        <li><a href="SMM&M.html">Social Media Marketing</a></li>
+        <li><a href="Website design.html">Web Development</a></li>
+        <li><a href="content writing.html">Content Writing</a></li>
+        <li><a href="PROFESSIONAL GRAPHICS.html">Graphics Designing</a></li>
+        <li><a href="professional photography.html">Photography & Videography</a></li>
+        <li><a href="PROFESSIONAL VIDEO EDITING.html">Video Editing</a></li>
+      </ul>
+    </li>
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</div>
+</header>
+
+<!--This is about us section-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Animated</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @media (max-width: 450px) {
+
+      .about-header h1{
+        font-size: 1.5rem !important;
+      }
+  .web-servicess h2 {
+    font-size: 1.4rem !important;
+    padding: 10px !important;
+    line-height: 1.8rem;
+  }
+
+  .web-servicess h3 {
+    font-size: 1.3rem !important;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 0 5px;
+  }
+}
+    @media (max-width: 768px) {
+  .servicess-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .servicess-box ul {
+    flex: 1 1 100%;
+    padding: 20px 10px;
+    font-size: 1.4rem;
+  }
+
+  .programming-columns {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 20%;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 400px;
+  }
+
+  .language-iconss {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .language-iconss img {
+    width: 40px;
+  }
+
+  .vertical-texts {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: black;
+  }
+
+  .web-servicess h2 {
+    font-size: 2rem;
+  }
+
+  .web-servicess h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .servicess-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .servicess-box ul {
+    flex: 1 1 65%;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+  }
+
+  .servicess-box ul p {
+    font-size: 0.85rem;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .programming-columns {
+    flex: 1 1 30%;
+margin-right: 25% !important;
+    max-width: 90px !important;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .language-iconss {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .language-iconss img {
+   max-width: 45px !important;
+   width: 100%;
+    height: auto;
+  }
+
+  .vertical-texts {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 6px;
+    letter-spacing: 1px;
+  }
+}
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      /*background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);*/
+    }
+
+    .about-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ABFF25;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ABFF25;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ABFF25;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #ABFF25;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ABFF25;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ABFF25;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ABFF25;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #ABFF25;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ABFF25;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ABFF25;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+
+    #ab{
+      margin-top: 100px;
+    }
+
+    
+
+/*Background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+@media(max-width:400px){
+  .about-header h1{
+    font-size: 1.3rem;
+  }
+}
+
+.servicess-box ul p{
+font-size: 2.2rem;
+ text-align: left;
+}
+@media (max-width:420px) {
+
+  .servicess-box ul p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  
+  .web-servicess h2{
+    font-size: 1rem;
+  }
+
+}
+@media (max-width:450px) {
+  
+  .servicess-box ul p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  
+  .web-servicess h2{
+    font-size: 1rem;
+  }
+
+  .servicess-box li{
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <div class="about-header">
+    <h1>PROFESSIONAL VIDEO EDITING &
+ <br><span>MOTION GRAPHICS EDITING</span></h1>
+   
+  </div>
+  <section class="web-pages">
+  <div class="web-servicess">
+    <h2>ADVANCED VIDEO EDITING</h2>
+    <h3>VIDEO EDITING SERVICES</h3>
+
+  
+    <div class="servicess-box">
+      <ul>
+              <b><p>We offer expert video editing services that transform 
+raw footage into visually stunning, engaging, and impactful
+content. Our team uses industry-leading software and
+creative techniques to ensure your video delivers a powerful
+message and maintains a professional standard.
+</p></b> <br>
+        <li>BASIC VIDEO EDITING</li>
+        <li>MOTION GRAPHICS VIDEO EDITING</li>
+        <li>PROFESSIONAL VIDEO EDITING</li>
+        <li>COMMERCIAL VIDEO EDITING</li>
+      </ul>
+<div class="programming-columns">
+  <div class="language-iconss">
+    <img src="../assets/premiere_5611084 (1).png" alt="PR" />
+    <img src="../assets/after-effects_5968428.png" alt="PS" />
+    <img src="../assets/Screenshot 2025-06-16 121537.png" alt="JS" />
+    <img src="../assets/icons8-final-cut-pro-x-480.png" alt="icons" />
+  </div>
+  <div class="vertical-texts">PROGRAMMING LANGUAGE</div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Section 2: Our Work Examples -->
+  <div class="our-work-video">
+    <h2>OUR WORK</h2>
+
+    <div class="work-block reverse">
+      <div class="work-img">
+        <img src="../assets/b4647084777b9972c471f74cabbf30c5d71847c7.png" alt="Basic Editing">
+      </div>
+      <div class="work-text">
+        <h3 style="font-size: 2rem;">BASIC VIDEO EDITING</h3>
+        <p>
+          Basic video editing is the process of making a raw video look clean, professional, and more engaging by applying simple adjustments. 
+          It doesn’t involve complex special effects or animation — instead, it focuses on improving the structure, clarity, and presentation of the video.
+        </p>
+      </div>
+    </div>
+
+    <div class="work-block">
+      <div class="work-img">
+        <img src="../assets/Screenshot (29) (1).png" alt="Motion Graphics Editing">
+      </div>
+      <div class="work-text">
+        <h3  style="font-size: 2rem;">MOTION GRAPHICS VIDEO EDITING</h3>
+        <p>
+          Motion graphics video editing is a style of editing that combines animation, graphic design, and movement to visually communicate ideas. 
+          It goes beyond basic editing — instead of just trimming clips or adding music, it involves creating moving visual elements like text, icons, logos, or illustrations.
+        </p>
+      </div>
+    </div>
+
+    <div class="work-block reverse">
+      <div class="work-img">
+        <img src="../assets/Vegas_pro_a5dd44ce99.JPG" alt="Professional Editing">
+      </div>
+      <div class="work-text">
+        <h3  style="font-size: 2rem;">PROFESSIONAL VIDEO EDITING</h3>
+        <p>
+          Professional Video Editing refers to the high-quality process of modifying and enhancing video content using advanced tools and techniques to create a polished final product. 
+          It involves more than just cutting and joining clips — it includes a wide range of creative and technical elements.
+        </p>
+      </div>
+    </div>
+
+    <div class="work-block">
+      <div class="work-img">
+        <img src="../assets/snapedit_1749309138231.jpeg" alt="Commercial Editing">
+      </div>
+      <div class="work-text">
+        <h3  style="font-size: 2rem;">PROFESSIONAL VIDEO EDITING</h3>
+        <p>
+          Commercial video editing is the process of cutting, arranging, and enhancing video content specifically for business, advertising, or promotional purposes. 
+          It involves crafting polished, engaging videos designed to communicate a brand’s message, promote products or services, and drive viewer action 
+          (such as buying, subscribing, or visiting a website).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .page-8 {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* --- Section 1: Service Box --- */
+
+
+.web-pages {
+  background: radial-gradient(circle, #1d1d1d, #000000);
+  padding: 50px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.web-servicess {
+  background-color: #a393f7;
+  border-radius: 30px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
+
+.web-servicess h2 {
+  background: #fff;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 800;
+}
+
+.web-servicess h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 800;
+}
+
+.servicess-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.servicess-box ul {
+  /*list-style: disc;*/
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 3.3rem;
+  flex: 1 1 65%;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.programming-columns {
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 30%;
+  margin-top: 20%;
+  max-height: 500px;
+  height: 100%;
+  max-width: 150px;
+  gap: 15px;
+  
+  margin-bottom: 50px;
+}
+
+.language-iconss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.language-iconss img {
+  width: 80px;
+  height: auto;
+}
+
+.vertical-texts {
+  writing-mode: vertical-lr;
+  text-orientation:unset;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+}
+
+/* --- Section 2: Our Work --- */
+.our-work-video {
+  margin-top: 60px;
+}
+
+.our-work-video h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.work-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.work-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.work-img {
+  flex: 1;
+  text-align: center;
+}
+.work-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.work-text {
+  flex: 2;
+}
+.work-text h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.work-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .video-service-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vertical-text {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .logo-stack {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .work-block,
+  .work-block.reverse {
+    flex-direction: column;
+  }
+
+  .work-img img {
+    max-width: 90%;
+  }
+}
+
+</style>
+<section>
+  <!--FAQ SECTION-->
+ <div class="faq-section">
+  <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>1. What video editing services do you offer?</h3>
+      <div class="faq-answer">We offer professional video editing for YouTube videos, social media reels, corporate promos, event highlights, music videos, vlogs, and more.</div>
+    </div>
+    <div class="faq-item">
+      <h3>2. How do you ensure high-quality editing?</h3>
+      <div class="faq-answer">We use industry-standard tools like Adobe Premiere Pro, After Effects, and DaVinci Resolve—delivering clean cuts, smooth transitions, sound design, color grading, and motion graphics as needed.</div>
+    </div>
+    <div class="faq-item">
+      <h3>3. Do you offer 12/7 support for video editing revisions?</h3>
+      <div class="faq-answer">Yes, our team is available round-the-clock to handle revisions, updates, or urgent project changes to keep your content delivery on track.</div>
+    </div>
+    <div class="faq-item">
+      <h3>4. Can you edit videos for any niche or industry?</h3>
+      <div class="faq-answer">Absolutely. We edit videos for tech, fashion, real estate, fitness, travel, education, and more—tailoring each video to your target audience and goals.</div>
+    </div>
+    <div class="faq-item">
+      <h3>5. Do you work with individuals and companies of all sizes?</h3>
+      <div class="faq-answer">Yes. Whether you're a YouTuber, influencer, startup, or large business—we provide scalable video editing solutions to match your content needs.</div>
+    </div>
+    <div class="faq-item">
+      <h3>6. What types of video formats do you deliver?</h3>
+      <div class="faq-answer">We deliver in all major formats (MP4, MOV, AVI, etc.) and resolutions (HD, Full HD, 4K), optimized for web, social media, or TV broadcast.</div>
+    </div>
+    <div class="faq-item ">
+      <h3>7. How do your pricing plans for video editing work?</h3>
+      <div class="faq-answer">Our pricing is based on video length, complexity, turnaround time, and required effects. We offer affordable packages with transparent pricing after consultation.
+
+</div>
+    </div>
+    <div class="faq-item">
+      <h3>8. How can I start a video editing project with you?</h3>
+      <div class="faq-answer">Just reach out through our contact page or call us. We'll review your raw footage, discuss your vision, and get started with a custom editing plan.
+
+</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+</section>
+<!--Branding-->
+<section class="hero-brand">
+  <p class="hero-subtitle">LET'S COLLABORATE</p>
+  <h1 class="hero-title" style="font-size: 9rem;"> 
+    ELEVATE YOUR
+  </h1><br>
+  <h1 class="hero-title">
+ BRAND GAME
+</h1>
+  <a href="Contact us/contact.html" class="hero-button">
+    ↗<br />Get In Touch
+  </a>
+</section>
+
+<!--footer for address and all-->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="../assets/vdv logo wb.png" alt="Logo" class="footer-logo" />
+      <div class="contact-box">
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+           
+            <p>vinayakadigiverse@gmail.com</p>
+          </div>
+        </div>
+
+         <div class="contact-row">
+   <div class="icon-circle phone">
+     <i class="fas fa-phone-alt"></i>
+   </div>
+   <div>
+     <p>Need help!</p>
+     <h3>+91–7083021583</h3>
+     <h3>+91–9039592878</h3>
+   </div>
+ </div>
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p>Branch 1:– INDORE - 452009 (M.P.) <br><br>Branch 2:– NAGPUR - 440027 (M.H.)</p>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="../about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="../Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+           <a href="../Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+           
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+                  <ul>
+         <a href="../Solutions/SMM&M.html" style="color: white; text-decoration: none;" > <li>SOCIAL MEDIA 
+MARKETING</li></a>
+          <a href="../Solutions/Website design.html" style="color: white; text-decoration: none;" > 
+<li>WEB DEVELOPMENT</li></a>
+
+           <a href="../Solutions/content writing.html" style="color: white; text-decoration: none;
+"><li>CONTENT WRITING</li></a>
+           <a href="../Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;
+"><li>GRAPHICS DESIGNING</li></a>
+           <a href="../Solutions/professional photography.html" style="color: white; text-decoration: none;
+"><li>PHOTOGRAPHY & VIDEOGRAPHY</li></a>
+
+           <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;" 
+> 
+<li>VIDEO EDITING</li></a>
+     </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+          <a href="../Contact us/contact.html " style="color: white; text-decoration: none;"><li>Contact Us</li></a>
+
+                 </ul>
+     </div>
+   </div>
+  </div>
+    <div class="footer-bottom">
+    <p>© Vinayaka Digiverse All Rights Reserved.</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/annry_editx?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://pin.it/TRHvAUtrw" target="_blank">
+  <i class="fab fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&utm_campaign=share_via&
+utm_content=profile&utm_medium=android_app" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

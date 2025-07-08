@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vinayaka Digiverse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../server.js"></script>
+  <script src="../first.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+  
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="../assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
+  </div>
+
+  <nav>
+  <ul class="navbar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/SMM&M.html">SOCIAL MEDIA MARKETING</a>
+        </li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/Website design.html">WEB DEVELOPMENT</a>
+        </li>
+
+        <!-- Custom Applications submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/content writing.html">CONTENT WRITING 
+ </a>
+        </li>
+
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="../Solutions/PROFESSIONAL GRAPHICS.html">GRAPHICS DESIGNING</a>
+</li>
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/professional photography.html"> PHOTOGRAPHY &
+ VIDEOGRAPHY </a>
+        </li>
+
+
+               <li class="has-submenu">
+         <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html">VIDEO EDITING 
+ </a>
+       </li>
+
+      </ul>
+    </li>
+
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+  <div style= "text-align:right; " class="hamburger" onclick="openSidebar()">☰</div>
+</nav>
+
+<!-- ✅ Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <ul class="mobile-menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+    <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">Solutions ▾</a>
+      <ul class="mobile-dropdown-menu">
+        <li><a href="../Solutions/SMM&M.html">Social Media Marketing</a></li>
+        <li><a href="../Solutions/Website design.html">Web Development</a></li>
+        <li><a href="../Solutions/content writing.html">Content Writing</a></li>
+        <li><a href="../Solutions/PROFESSIONAL GRAPHICS.html">Graphics Designing</a></li>
+        <li><a href="../Solutions/professional photography.html">Photography & Videography</a></li
+        <li><a href="../olutions/PROFESSIONAL VIDEO EDITING.html">Video Editing</a></li>
+      </ul>
+    </li>
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</div>
+</header>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Design in India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ccff00;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ccff00;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ccff00;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #caed2f;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ccff00;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ccff00;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ccff00;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #d9ff33;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ccff00;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ccff00;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-header">
+    <h1>Contact<span> Us</span></h1>
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> * Contact Us
+    </div>
+  </div>
+
+<!--This is for services and navigation-->
+<!-- MOVING BANNER SECTION -->
+<div class="marquee-container">
+  <div class="marquee">
+    <span>📊 Analysis & Reporting</span>
+    <span>🎨 Graphic Designing</span>
+    <span>🧩 Website Designing</span>
+    <span>👨‍💻 Website Development</span>
+    <span>📢 Digital Marketing</span>
+    <span>📊 Analysis & Reporting</span>
+    <span>🎨 Graphic Designing</span>
+    <span>🧩 Website Designing</span>
+    <span>👨‍💻 Website Development</span>
+    <span>📢 Digital Marketing</span>
+  </div>
+</div>
+<br><br><br><br><br><br>
+
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-form">
+      <h4>✱ CONTACT US</h4>
+      <h2>Reach out for <span>Business excellence</span></h2>
+      <form id="contactForm" action="http://localhost:3000/send" method="POST">
+        <div class="form-row">
+          <input type="text" name="firstname" placeholder="First name" required />
+          <input type="text" name="lastName" placeholder="Last name" required/>
+        </div>
+        <div class="form-row">
+          <input type="text" name="mobile" placeholder="Mobile no" required />
+          <input type="email" name="email" placeholder="E-mail" required/>
+        </div>
+        <textarea name="message" placeholder="Write message..." required></textarea>
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+
+ <script>
+  document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
+
+    const res = await fetch("http://localhost:3000/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (res.ok) {
+      window.location.href = "thankyou.html"; // ✅ only change
+    } else {
+      alert("❌ Error sending message.");
+    }
+  });
+</script>
+
+
+    <div class="contact-info-box">
+      <h2>Say <span class="green">hello!</span></h2>
+      <p>Get in touch with our expert team to explore tailored IT solutions that drive innovation, efficiency.</p>
+      
+      <div class="contact-details">
+        <p>📞 +91-9039592878 <br><span style="margin-left: 30px;">+91-7083021583</span></p>
+        <p>📧 vinayakadigiverse@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+    .contact-section {
+  background: #000;
+  padding: 80px 40px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1 1 55%;
+}
+
+.contact-form h4 {
+  color: #9aff00;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-form h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-form h2 span {
+  color: #9aff00;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  border: none;
+  background: #0e0e0e;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.captcha-box {
+  margin: 20px 0;
+}
+
+.fake-recaptcha {
+  background: #fff;
+  padding: 10px;
+  color: #000;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.send-btn {
+  padding: 15px 40px;
+  background: #bfff00;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send-btn:hover {
+  background: #aee000;
+}
+
+/* Right side */
+.contact-info-box {
+  flex: 1 1 40%;
+  background: #111;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.contact-info-box .green {
+  color: #bfff00;
+}
+
+.contact-info-box p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.support-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.contact-details {
+  font-size: 16px;
+}
+.send-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+</style>
+<section>
+  <!--FAQ SECTION-->
+   <div class="faq-section">
+  <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>1.How can I contact your team directly?</h3>
+      <div class="faq-answer">You can reach us through our contact form, email, WhatsApp, or by calling the 
+number listed on our Contact Us page. We’re here to help!</div>
+    </div>
+    <div class="faq-item">
+      <h3>2. What is your usual response time?</h3>
+      <div class="faq-answer">We typically respond within 12–24 hours on business days. For urgent inquiries, 
+we recommend calling us directly for faster assistance.</div>
+    </div>
+    <div class="faq-item">
+      <h3>3.Do you offer free consultations before starting a project?</h3>
+      <div class="faq-answer">Yes, we provide a free consultation to understand your needs and suggest the best 
+solution before any commitment is made.</div>
+    </div>
+    <div class="faq-item">
+      <h3>4.Can I schedule an in-person meeting or virtual call?</h3>
+      <div class="faq-answer">Absolutely! We offer both in-person meetings (if local) and virtual Zoom/Google 
+Meet calls. Just mention your preference when reaching out.</div>
+    </div>
+    <div class="faq-item">
+      <h3>5. What details should I include in my message?</h3>
+      <div class="faq-answer">Please include your name, contact info, business name, service you’re interested 
+in, and a brief description of your project or question.</div>
+    </div>
+    <div class="faq-item">
+      <h3>6.  What are your business hours?</h3>
+      <div class="faq-answer">We’re available Monday to Saturday, 10 AM to 7 PM IST. You can still submit 
+inquiries after hours and we’ll get back to you the next business day.</div>
+    </div>
+    <div class="faq-item ">
+      <h3>7. Do you offer support after project delivery?</h3>
+      <div class="faq-answer">Yes. We provide ongoing support and maintenance based on your service plan or 
+agreement. You can always reach out if you need help later.</div>
+    </div>
+    <div class="faq-item">
+      <h3>8. Where are you located?</h3>
+      <div class="faq-answer"> We are based in <b> INDORE,MADHYA PRADESH AND NAGPUR,MAHARASHTRA </b>and serve clients 
+across India and internationally through remote collaboration.
+
+</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+</section>
+<!--Branding-->
+<section class="hero-brand">
+  <p class="hero-subtitle">LET'S COLLABORATE</p>
+  <h1 class="hero-title" style="font-size: 9rem;"> 
+    ELEVATE YOUR
+  </h1><br>
+  <h1 class="hero-title">
+ BRAND GAME
+</h1>
+  <a href="Contact us/contact.html" class="hero-button">
+    ↗<br />Get In Touch
+  </a>
+</section>
+
+
+<!--footer for address and all-->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="../assets/vdv logo wb.png" alt="Logo" class="footer-logo" />
+      <div class="contact-box">
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+           
+            <p>vinayakadigiverse@gmail.com</p>
+          </div>
+        </div>
+
+         <div class="contact-row">
+   <div class="icon-circle phone">
+     <i class="fas fa-phone-alt"></i>
+   </div>
+   <div>
+     <p>Need help!</p>
+     <h3>+91–7083021583</h3>
+     <h3>+91–9039592878</h3>
+   </div>
+ </div>
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p>Branch 1:– INDORE - 452009 (M.P.) <br><br>Branch 2:– NAGPUR - 440027 (M.H.)</p>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="../about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="../Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+           <a href="../Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+           
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+         <a href="../Solutions/SMM&M.html" style="color: white; text-decoration: none;" > <li>SOCIAL MEDIA MARKETING</li></a>
+          <a href="../Solutions/Website design.html" style="color: white; text-decoration: none;" > 
+<li>WEB DEVELOPMENT</li></a>
+
+           <a href="Solutions/content writing.html" style="color: white; text-decoration: none;"><li>CONTENT WRITING</li></a>
+           <a href="../Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;
+"><li>GRAPHICS DESIGNING</li></a>
+           <a href="../Solutions/professional photography.html" style="color: white; text-decoration: none;
+"><li>PHOTOGRAPHY & VIDEOGRAPHY</li></a>
+
+           <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;" 
+> 
+<li>VIDEO EDITING</li></a>
+     </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+          <a href="../Contact us/contact.html " style="color: white; text-decoration: none;"><li>Contact Us</li></a>
+       </ul>
+     </div>
+   </div>
+ </div>
+
+  <div class="footer-bottom">
+    <p>© Vinayaka Digiverse All Rights Reserved.</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/annry_editx?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://pin.it/TRHvAUtrw" target="_blank">
+  <i class="fab fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&utm_campaign=share_via&
+utm_content=profile&utm_medium=android_app" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

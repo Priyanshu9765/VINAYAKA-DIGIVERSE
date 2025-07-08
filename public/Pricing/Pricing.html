@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vinayaka Digiverse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../first.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="../assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
+  </div>
+
+  <nav>
+  <ul class="navbar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/SMM&M.html">SOCIAL MEDIA MARKETING</a>
+        </li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/Website design.html">WEB DEVELOPMENT</a>
+        </li>
+
+        <!-- Custom Applications submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/content writing.html">CONTENT WRITING
+ </a>
+        </li>
+
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="../Solutions/PROFESSIONAL GRAPHICS.html">GRAPHICS
+ DESIGNING </a>
+</li>
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="../Solutions/professional photography.html">PHOTOGRAPHY &
+ VIDEOGRAPHY </a>
+        </li>
+
+
+               <li class="has-submenu">
+         <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html">VIDEO EDITING 
+</a>
+       </li>
+
+      </ul>
+    </li>
+
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+  <div style= "text-align:right; " class="hamburger" onclick="openSidebar()">☰</div>
+</nav>
+<!-- ✅ Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <ul class="mobile-menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+    <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">Solutions ▾</a>
+      <ul class="mobile-dropdown-menu">
+        <li><a href="../Solutions/SMM&M.html">Social Media Marketing</a></li>
+        <li><a href="../Solutions/Website design.html">Web Development</a></li>
+        <li><a href="../Solutions/content writing.html">Content Writing</a></li>
+        <li><a href="../Solutions/PROFESSIONAL GRAPHICS.html">Graphics Designing</a></li>
+        <li><a href="../Solutions/professional photography.html">Photography & Videography</a></li
+        <li><a href="../Solutions/PROFESSIONAL VIDEO EDITING.html">Video Editing</a></li>
+      </ul>
+    </li>
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</div>
+</header>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Design in India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ccff00;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ccff00;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ccff00;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #caed2f;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ccff00;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ccff00;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ccff00;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #d9ff33;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ccff00;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ccff00;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-header">
+    <h1>Website Designing <span> Pricing</span></h1>
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> * Pricing Website Designing
+    </div>
+  </div>
+
+<!--This is for services and navigation-->
+<!-- MOVING BANNER SECTION -->
+ <br><br>
+<!--Content of Pricing-->
+<style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+    }
+
+    .pricing-section {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+
+    .plan {
+      background: #111;
+      border-radius: 20px;
+      padding: 50px 20px;
+      width: 390px;
+      box-shadow: 0 0 30px rgba(0, 255, 0, 0.05);
+    }
+
+    .plan h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .price {
+      background: #000;
+      color: #A3FF0A;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .features li {
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .features li::before {
+      content: "✔";
+      color: #A3FF0A;
+      position: absolute;
+      left: 0;
+    }
+
+    .contact-btn {
+      display: block;
+      text-align: center;
+      background-color: #444;
+      padding: 12px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="pricing-section">
+    <!-- Standard Plan -->
+    <div class="plan">
+      <h3>Standard Plan</h3>
+      <div class="price">Rs. 7,999</div>
+      <ul class="features">
+        <li>5 pages Website</li>
+        <li>1 Year Free Domain Name (.com .in .org)</li>
+        <li>1 Year Free Hosting (Unlimited Space)</li>
+        <li>Dynamic Website (Premium Design)</li>
+        <li>Admin Access</li>
+        <li>Lifetime 24/7 Free Hosting Support</li>
+        <li>Unlimited Images & Videos Upload</li>
+        <li>Free SSL Certificates</li>
+        <li>5 Free Email Id</li>
+        <li>SEO Friendly Website</li>
+        <li>100% Responsive Website</li>
+        <li>Live Chat Integration</li>
+        <li>Payment Gateway Integration</li>
+        <li>Social Media Integration</li>
+        <li>Call Button Integration</li>
+        <li>WhatsApp Button Integration</li>
+        <li>Inquiry Form</li>
+        <li>1 Year Free Technical Support For Website</li>
+        <li>Annual Renewal For Hosting Rs.3000.</li>
+      </ul>
+      <a href="#" class="contact-btn">Contact Now</a>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="plan">
+      <h3>Premium Plan</h3>
+      <div class="price">Rs. 14,999</div>
+      <ul class="features">
+        <li>12 pages Website</li>
+        <li>1 Year Free Domain Name (.com .in .org)</li>
+        <li>1 Year Free Hosting (Unlimited Space)</li>
+        <li>Dynamic Website (Premium Design)</li>
+        <li>Admin Access</li>
+        <li>Google Search Console Setup</li>
+        <li>Lifetime 24/7 Free Hosting Support</li>
+        <li>Unlimited Images & Videos Upload</li>
+        <li>Free SSL Certificates</li>
+        <li>10 Free Email Id</li>
+        <li>SEO Friendly Website</li>
+        <li>100% Responsive Website</li>
+        <li>Live Chat Integration</li>
+        <li>Payment Gateway Integration</li>
+        <li>Social Media Integration</li>
+        <li>Call Button Integration</li>
+        <li>WhatsApp Button Integration</li>
+        <li>Inquiry Form</li>
+        <li>Woocommerce Features</li>
+        <li>1 Year Free Technical Support For Website</li>
+        <li>Annual Renewal For Hosting Rs.3000.</li>
+      </ul>
+      <a href="#" class="contact-btn">Contact Now</a>
+    </div>
+
+    <!-- Custom Plan -->
+    <div class="plan">
+      <h3>Custom Plan</h3>
+      <div class="price">Rs. ????</div>
+      <ul class="features">
+        <li>Pages: According to Requirement</li>
+        <li>1 Year Free Domain Name (.com .in .org)</li>
+        <li>1 Year Free Hosting (Unlimited Space)</li>
+        <li>Dynamic Website (Premium Design)</li>
+        <li>Admin Access</li>
+        <li>Google Search Console Setup</li>
+        <li>Lifetime 24/7 Free Hosting Support</li>
+        <li>Unlimited Images & Videos Upload</li>
+        <li>Free SSL Certificates</li>
+        <li>10 Free Email Id</li>
+        <li>SEO Friendly Website</li>
+        <li>100% Responsive Website</li>
+        <li>Live Chat Integration</li>
+        <li>Payment Gateway Integration</li>
+        <li>Social Media Integration</li>
+        <li>Call Button Integration</li>
+        <li>WhatsApp Button Integration</li>
+        <li>Inquiry Form</li>
+        <li>Woocommerce Features</li>
+        <li>1 Year 24/7 Free Support For Website</li>
+        <li>Annual Renewal Rs. 4000</li>
+      </ul>
+      <a href="#" class="contact-btn">Contact Now</a>
+    </div>
+  </section>
+
+<section>
+  <!--FAQ SECTION-->
+ <div class="faq-section">
+  <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>1. How do your service pricing plans work?</h3>
+      <div class="faq-answer">Our pricing is flexible and tailored to each project. We assess your requirements, goals, and complexity to provide a detailed, transparent quote—no hidden charges.</div>
+    </div>
+    <div class="faq-item">
+      <h3>2. Do you offer fixed packages or custom pricing?</h3>
+      <div class="faq-answer"> We offer both. You can choose from predefined packages for common services or request a custom plan built around your business needs and budget.</div>
+    </div>
+    <div class="faq-item">
+      <h3>3. Are your prices affordable for startups and small businesses?</h3>
+      <div class="faq-answer">Absolutely. We work with companies of all sizes and offer scalable solutions to ensure you get high-quality services without breaking the bank.</div>
+    </div>
+    <div class="faq-item">
+      <h3>4.What factors influence the final cost of a project?</h3>
+      <div class="faq-answer">Pricing depends on project type, scope, duration, technologies used, content volume, and design complexity. We’ll always explain pricing clearly before we start.</div>
+    </div>
+    <div class="faq-item">
+      <h3>5. Do you require an upfront payment or deposit?</h3>
+      <div class="faq-answer">Yes, we typically request a percentage upfront to begin the work. The remaining balance is paid in milestones or upon project completion—based on your plan.</div>
+    </div>
+    <div class="faq-item">
+      <h3>6. Is there a free consultation before finalizing the price?</h3>
+      <div class="faq-answer">Yes! We offer a free initial consultation to understand your goals and suggest the most cost-effective plan before providing a final quote.</div>
+    </div>
+    <div class="faq-item">
+      <h3>7. Can I upgrade or downgrade my package later?</h3>
+      <div class="faq-answer">Yes, our plans are flexible. You can easily scale up or down as your business grows or your needs change—just let us know.</div>
+    </div>
+    <div class="faq-item">
+      <h3>8. How can I request a detailed pricing quote?</h3>
+      <div class="faq-answer">Simply visit our contact page or call us directly. We’ll gather your requirements and send a personalized quote within 24–48 hours.
+
+</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+</section>
+<!--Branding-->
+<section class="hero-brand">
+  <p class="hero-subtitle">LET'S COLLABORATE</p>
+  <h1 class="hero-title" style="font-size: 9rem;"> 
+    ELEVATE YOUR
+  </h1><br>
+  <h1 class="hero-title">
+ BRAND GAME
+</h1>
+  <a href="Contact us/contact.html" class="hero-button">
+    ↗<br />Get In Touch
+  </a>
+</section>
+<!--footer for address and all-->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="../assets/vdv logo wb.png" alt="Logo" class="footer-logo" />
+      <div class="contact-box">
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+           
+            <p>vinayakadigiverse@gmail.com</p>
+          </div>
+        </div>
+
+         <div class="contact-row">
+   <div class="icon-circle phone">
+     <i class="fas fa-phone-alt"></i>
+   </div>
+   <div>
+     <p>Need help!</p>
+     <h3>+91–7083021583</h3>
+     <h3>+91–9039592878</h3>
+   </div>
+ </div>
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p>Branch 1:– INDORE - 452009 (M.P.) <br><br>Branch 2:– NAGPUR - 440027 (M.H.)</p>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="../about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="../Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+           <a href="../Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+           
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+         <a href="../Solutions/SMM&M.html" style="color: white; text-decoration: none;" > <li>SOCIAL MEDIA MARKETING</li></a>
+          <a href="../Solutions/Website design.html" style="color: white; text-decoration: none;" > 
+<li>WEB DEVELOPMENT</li></a>
+
+           <a href="../Solutions/content writing.html" style="color: white; text-decoration: none;"><li>CONTENT WRITING</li></a>
+           <a href="../Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;
+"><li>GRAPHICS DESIGNING</li></a>
+           <a href="../Solutions/professional photography.html" style="color: white; text-decoration: none;
+"><li>PHOTOGRAPHY & VIDEOGRAPHY</li></a>
+
+           <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;" 
+> 
+<li>VIDEO EDITING</li></a>
+     </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+          <a href="../Contact us/contact.html " style="color: white; text-decoration: none;"><li>Contact Us</li></a>
+       </ul>
+     </div>
+   </div>
+ </div>
+
+  <div class="about-company">
+    <h2><b>About Our Company</b>  </h2>
+    <p>
+      Amazing design and experiences can only be achieved by talented people.
+      Luckily for us, we are surrounded by amazing talent and that talent
+      transcends their expertise into fantastic experiences.VINAYAKA DIGIVERSE has
+      successfully helped design and implement web sites for many clients
+      worldwide.
+    </p>
+  </div>
+  <div class="footer-bottom">
+    <p>© Vinayaka Digiverse All Rights Reserved.</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/annry_editx?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://pin.it/TRHvAUtrw" target="_blank">
+  <i class="fab fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&utm_campaign=share_via&
+utm_content=profile&utm_medium=android_app" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

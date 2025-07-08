@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Vinayaka Digiverse
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet">
+   <link href="about.css" rel="stylesheet"/>
+   <script src="first.js">
+   </script>
+   <link as="image" href="banner.webp" rel="preload">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    </link>
+   </link>
+  </link>
+  <style>
+  
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+   font-family: 'Poppins', sans-serif;
+}
+.projects-section {
+  padding: 80px 20px;
+  color: white;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.projects-heading h5 {
+  color: #ABFF25;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.projects-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects-heading h2 span {
+  color: #ABFF25;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 20px;
+}
+
+.project-card {
+  background: #0a0f0a;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+  border-radius: 0;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-info .category {
+  color: #ABFF25;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.project-info h3 {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .project-info h3 {
+    font-size: 1rem;
+  }
+  .project-card img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-heading h2 {
+    font-size: 1.7rem;
+  }
+  .project-card {
+    width: 100%;
+  }
+  .project-card img {
+    height: 300px;
+  }
+  .project-info h3 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-heading h2 {
+    font-size: 1.5rem;
+  }
+  .project-card img {
+    height: 320px;
+  }
+  .project-info h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .project-card img {
+    height: 330px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .project-card img {
+    height: 350px;
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* === Fix 2: Hero section font size === */
+@media (max-width:400px) {
+  .hero-text h2 {
+  font-size: 1.3rem !important;
+  line-height: 1.4;
+}
+.hero-text p {
+  font-size: 0.9rem !important;
+}
+
+}
+@media (max-width:1000px) {
+  .hero-text h2 {
+  font-size: 1.3rem !important;
+  line-height: 1.4;
+}
+.hero-text p {
+  font-size: 0.9rem !important;
+}
+
+}
+/* === Fix 3: Projects section card layout === */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+.project-info h3 {
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  line-height: 1.2;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .project-info h3 {
+    font-size: 0.85rem;
+  }
+}
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="logo-container">
+    <img alt="Vinayaka Digiverse Logo" class="logo-img" loading="lazy" src="assets/vdv fulllogo.png"/>
+   </div>
+   <nav>
+    <ul class="navbar">
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="about-us.html">
+       About Us
+      </a>
+     </li>
+     <li class="dropdown">
+      <a href="#">
+       Solutions ▾
+      </a>
+      <ul class="dropdown-menu">
+       <!-- Graphic Design submenu -->
+       <li class="has-submenu">
+        <a href="Solutions/SMM&amp;M.html">
+         SOCIAL MEDIA 
+            MARKETING
+        </a>
+       </li>
+       <!-- Web Design submenu -->
+       <li class="has-submenu">
+        <a href="Solutions/Website design.html">
+         WEB DEVELOPMENT
+        </a>
+       </li>
+       <!-- Custom Applications submenu -->
+       <li class="has-submenu">
+        <a href="Solutions/content writing.html">
+         CONTENT WRITING
+        </a>
+       </li>
+       <!-- VIDEO & PRINTING submenu -->
+       <li class="has-submenu">
+        <a href="Solutions/PROFESSIONAL GRAPHICS.html">
+         GRAPHICS
+ DESIGNING
+        </a>
+       </li>
+       <!-- Marketing submenu -->
+       <li class="has-submenu">
+        <a href="Solutions/professional photography.html">
+         PHOTOGRAPHY &amp;
+ VIDEOGRAPHY
+        </a>
+       </li>
+       <li class="has-submenu">
+        <a href="Solutions/PROFESSIONAL VIDEO EDITING.html">
+         VIDEO
+ EDITING
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="Blog/blog.html">
+       Blogs
+      </a>
+     </li>
+     <li>
+      <a href="Pricing/Pricing.html">
+       Pricing
+      </a>
+     </li>
+     <li>
+      <a href="Contact us/contact.html">
+       Get in touch
+      </a>
+     </li>
+    </ul>
+    <div class="hamburger" onclick="openSidebar()" style="text-align:right; ">
+     ☰
+    </div>
+   </nav>
+   <!-- ✅ Mobile Sidebar -->
+   <div class="mobile-sidebar" id="mobileSidebar" >
+    <div class="close-btn" onclick="closeSidebar()">
+     ✕
+    </div>
+    <ul class="mobile-menu">
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="about-us.html">
+       About Us
+      </a>
+     </li>
+     <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">
+       Solutions ▾
+      </a>
+      <ul class="mobile-dropdown-menu">
+       <li>
+        <a href="Solutions/SMM&amp;M.html">
+         Social Media Marketing
+        </a>
+       </li>
+       <li>
+        <a href="Solutions/Website design.html">
+         Web Development
+        </a>
+       </li>
+       <li>
+        <a href="Solutions/content writing.html">
+         Content Writing
+        </a>
+       </li>
+       <li>
+        <a href="Solutions/PROFESSIONAL GRAPHICS.html">
+         Graphics Designing
+        </a>
+       </li>
+       <li>
+        <a href="Solutions/professional photography.html">
+         Photography &amp; Videography
+        </a>
+       </li>
+       <li>
+        <a href="Solutions/PROFESSIONAL VIDEO EDITING.html">
+         Video Editing
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="Blog/blog.html">
+       Blogs
+      </a>
+     </li>
+     <li>
+      <a href="Pricing/Pricing.html">
+       Pricing
+      </a>
+     </li>
+     <li>
+      <a href="Contact us/contact.html">
+       Get in touch
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <section class="hero">
+   <video autoplay="" class="background-video" loop="" muted="" playsinline="">
+    <source src="assets/background image vdv.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+   </video>
+   <div class="hero-text">
+    <p>
+     WELCOME TO VINAYAKA DIGIVERSE
+    </p>
+    <h2>
+     IT’S TIME TO TRANSFORM YOUR BRAND INTO
+     <br/>
+     <span style="color: #abff25;">
+      POWERFUL FORCES &amp; RANK HIGHER
+     </span>
+     <br/>
+     WITH OUR BEST DIGITAL SERVICES
+    </h2>
+    <p>
+     Custom Websites, Branding &amp; Digital Marketing
+    </p>
+   </div>
+   <div class="hero-image">
+    <img alt="Hero Image" loading="lazy" src="assets/person-front-computer-working-html.jpg"/>
+   </div>
+  </section>
+  <!--This is for services and navigation-->
+  <!-- MOVING BANNER SECTION -->
+  <div class="marquee-container">
+   <div class="marquee">
+    <span>
+     ✳ Analysis &amp; Reporting
+    </span>
+    <span>
+     ✳ Graphic Designing
+    </span>
+    <span>
+     ✳ Website Designing
+    </span>
+    <span>
+     ✳ Website Development
+    </span>
+    <span>
+     ✳ Digital Marketing
+    </span>
+    <span>
+     ✳ Analysis &amp; Reporting
+    </span>
+    <span>
+     ✳ Graphic Designing
+    </span>
+    <span>
+     ✳ Website Designing
+    </span>
+    <span>
+     ✳ Website Development
+    </span>
+    <span>
+     ✳ Digital Marketing
+    </span>
+   </div>
+  </div>
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+   <div class="container">
+    <h2>
+     OUR
+     <span class="highlight">
+      SERVICES
+     </span>
+    </h2>
+    <div class="service-cards">
+     <div class="card">
+      <img alt="Service 1" id="img1" loading="lazy" src="assets/25025577_7038056.svg"/>
+      <h3>
+       SOCIAL MEDIA <br/> MANAGEMENT
+    
+       &amp; MARKETING
+      </h3>
+     </div>
+     <div class="card">
+      <img alt="Service 2" id="img2" loading="lazy" src="assets/11641810_4758686 (1).svg"/>
+      <h3>
+       WEBSITE DESIGNING
+       <br/>
+       &amp;WEBSITE DEVELOPMENT
+      </h3>
+     </div>
+     <div class="card">
+      <img alt="Service 3" id="img3" loading="lazy" src="assets/12704402_5000590.svg"/>
+      <h3>
+       CONTENT WRITING &amp;
+       <br/>
+       CONTENT CREATION
+      </h3>
+     </div>
+     <div class="card">
+      <img alt="Service 4" id="img4" loading="lazy" src="assets/7118028_3343971.svg"/>
+      <h3>
+       PROFESSIONAL GRAPHICS DESIGNING  &amp;
+       <br/>
+        PREMIUM PRINTING
+      </h3>
+     </div>
+     <div class="card">
+      <img alt="Service 5" id="img5" loading="lazy" src="assets/11604301_Video Files.svg"/>
+            <h3>
+       PROFESSIONAL VIDEO
+       <br/>
+       EDITING &amp;
+MOTION GRAPHICS EDITING
+      </h3>
+     </div>
+     <div class="card">
+      <img alt="Service 6" id="img6" loading="lazy" src="assets/7140772_3515448.svg"/>
+            <h3>
+       PROFESSIONAL PHOTOGRAPHY,
+       <br/>
+       VIDEOGRAPHY &amp; CINEMATOGRAPHY
+      </h3> 
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--Our Projects section-->
+  <section class="projects-section">
+   <div class="projects-heading">
+    <h5 style="font-size: 1.7rem;">
+     <b>
+      OUR SERVICES FOR
+     </b>
+    </h5>
+    <h2>
+     Built to
+     <span>
+      Stand Out
+     </span>
+     
+     <br/>
+     — Powered by Strategy, Styled by Design
+    </h2>
+   </div>
+   <div class="project-grid" style="text-align: center;">
+    <a class="project-card" href="project1.html">
+     <img alt="Project 1" loading="lazy" src="assets/technology.jpg"/>
+     <div class="project-info">
+      <h3>
+       TECHNOLOGY AND SOFTWARE
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project3.html">
+     <img alt="Project 3" loading="lazy" src="assets/cafe and restro.jpg"/>
+     <div class="project-info">
+      <h3>
+       CAFES AND RESTAURANTS
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project4.html">
+     <img alt="Project 4" loading="lazy" src="assets/Banking And finance.jpg"/>
+     <div class="project-info">
+      <h3>
+       FINANCE AND BANKING
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project2.html">
+     <img alt="Project 2" loading="lazy" src="assets/healthcare.jpg"/>
+     <div class="project-info">
+      <h3>
+       HEALTHCARE AND PHARMACEUTICALS
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project5.html">
+     <img alt="Project 5" loading="lazy" src="assets/retail and ecom.jpg"/>
+     <div class="project-info">
+      <h3>
+       RETAIL AND E-COMMERCE
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project6.html">
+     <img alt="Project 6" loading="lazy" src="assets/hospitality.jpg"/>
+     <div class="project-info">
+      <h3>
+       HOSPITALITY AND TRAVEL MANAGEMENT
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project7.html">
+     <img alt="Project 7" loading="lazy" src="assets/automotive comapanies.jpg"/>
+     <div class="project-info">
+      <h3>
+       AUTOMOTIVE COMPANIES
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project8.html">
+     <img alt="Project 8" src="assets/fashion.jpg"/>
+     <div class="project-info">
+      <h3>
+       FASHION AND APPAREL BRANDS
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project9.html">
+     <img alt="Project 9" src="assets/real estate.jpg"/>
+     <div class="project-info">
+      <h3>
+       REAL ESTATE AGENCIES
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project10.html">
+     <img alt="Project 10" src="assets/educational .jpg"/>
+     <div class="project-info">
+      <h3>
+       EDUCATIONAL INSTITUTIONS
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project11.html">
+     <img alt="Project 11" loading="lazy" src="assets/legal and law firms.jpg"/>
+     <div class="project-info">
+      <h3>
+       LEGAL AND LAW FIRMS
+      </h3>
+     </div>
+    </a>
+    <a class="project-card" href="project12.html">
+     <img alt="Project 12" loading="lazy" src="assets/fitness clubs.jpg"/>
+     <div class="project-info">
+      <h3>
+       FITNESS CLUBS(GYMS)
+      </h3>
+     </div>
+    </a>
+   </div>
+  </section>
+  <!-- ABOUT COMPANY -->
+  <section class="about-company" id="about">
+   <div class="container">
+    <div class="about-content">
+     <div class="about-left">
+      <img alt="Team Working" class="about-img" loading="lazy" src="assets/about company.jpg">
+       <div class="project-complete">
+        <span>
+         112+
+        </span>
+        <p>
+         Project Complete
+        </p>
+       </div>
+       <br/>
+       <br/>
+       <div class="project-complete">
+        <span>
+          5+
+        </span>
+        <p>
+         Years Of Experience
+        </p>
+       </div>
+      </img>
+     </div>
+     <div class="about-right">
+<<<<<<< HEAD
+      <p class="section-subtitle" style="font-size: 2rem; text-align: center;">
+=======
+      <p class="section-subtitle">
+>>>>>>> f689104 (Updated HTML file)
+       ABOUT COMPANY
+      </p>
+      <h2>
+       Trusted
+       <span class="highlight">
+        expertise
+       </span>
+       for your
+       <br>
+        technology needs
+       </br>
+      </h2>
+      <p>
+       Our team brings years of experience and industry-leading expertise to provide tailored IT solutions 
+that meet your business needs.
+      </p>
+      <br/>
+      <br/>
+      <h2>
+       Innovating technology for your
+       <span class="highlight">
+        success
+       </span>
+      </h2>
+      <p>
+       We specialize in delivering cutting-edge IT solutions that drive innovation, streamline operations, and empower businesses to achieve their goals.
+      </p>
+      <ul>
+       <li>
+        Empowering Growth with Smart Solutions
+       </li>
+       <li>
+        Collaborative Approach for Maximum Impact
+       </li>
+       <li>
+        Innovative Solutions, Real-World Results
+       </li>
+       <li>
+        Proven Track Record of Success
+       </li>
+       <li>
+        Customer-Centric Approach to IT
+       </li>
+      </ul>
+      <!-- Success Rate -->
+      <div class="stat-box">
+       <div class="stat-number" id="successRate">
+        0%
+       </div>
+       <div class="stat-label">
+        Success Rate
+       </div>
+      </div>
+      <!-- Satisfied Clients -->
+      <div class="stat-box">
+       <div class="stat-number" id="clients">
+        0+
+       </div>
+       <div class="stat-label">
+        Satisfied Clients
+       </div>
+      </div>
+      <div class="stat-box">
+       <div class="stat-number" id="clients">
+        12/7
+       </div>
+       <div class="stat-label">
+        Customer Support
+       </div>
+      </div>
+      <a class="more-btn" href="Contact us/contact.html">
+       CONTACT US
+       <span>
+        →
+       </span>
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--OUR TECHNOLOGY SECTION-->
+<<<<<<< HEAD
+<section class="technology-section">
+  <h2>OUR TECHNOLOGIES</h2>
+  <div class="tech-circle-wrapper">
+    <div class="circle-border"></div>
+    <div class="logo-container" id="logoContainer">
+      <img src="images/html.png" alt="HTML" class="logo">
+      <img src="images/css.png" alt="CSS" class="logo">
+      <img src="images/js.png" alt="JavaScript" class="logo">
+      <img src="images/jquery.png" alt="jQuery" class="logo">
+      <img src="images/bootstrap.png" alt="Bootstrap" class="logo">
+      <img src="images/php.png" alt="PHP" class="logo">
+      <img src="images/cakephp.png" alt="CakePHP" class="logo">
+      <img src="images/wordpress.png" alt="WordPress" class="logo">
+      <img src="images/angular.png" alt="Angular" class="logo">
+      <img src="images/nodejs.png" alt="NodeJS" class="logo">
+      <img src="images/magento.png" alt="Magento" class="logo">
+      <img src="images/sass.png" alt="Sass" class="logo">
+      <img src="images/laravel.png" alt="Laravel" class="logo">
+      <img src="images/android.png" alt="Android" class="logo">
+    </div>
+    <div class="center-person">
+      <img src="images/person.png" alt="Developer">
+    </div>
+  </div>
+</section>
+=======
+>>>>>>> f689104 (Updated HTML file)
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+   <h2 class="testimonial-heading">
+    What Our Clients Say
+   </h2>
+   <div class="testimonial-carousel">
+    <div class="testimonial-slide active">
+     <img alt="Client 1" loading="lazy" src="assets/soamesh.jpg"/>
+     <div class="stars">
+      ★★★★★
+     </div>
+     <p>
+      "This company delivered beyond expectations! Amazing work!"
+     </p>
+     <h4>
+      - Soamesh deshpande
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 2" loading="lazy" src="assets/kartik.jpg"/>
+     <div class="stars">
+      ★★★★★
+     </div>
+     <p>
+      "Very professional and timely service. Would recommend!"
+     </p>
+     <h4>
+      - Kartik kandhari
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 3" loading="lazy" src="assets/muskan.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Muskan Prasad
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" loading="lazy" src="assets/reshma.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Reshma khaling
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" loading="lazy" src="assets/test1.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Aditi Yadav
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" loading="lazy" src="assets/test2.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Rishika Rathore
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" loading="lazy" src="assets/test3.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Mohit Patel
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" loading="lazy" src="assets/test4.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - KBM Masale
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" loading="lazy" src="assets/test5.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Anurag Yadav
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" loading="lazy" src="assets/test6.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Anjali Patil
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" loading="lazy" src="assets/test7.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Rishabh Susner
+     </h4>
+    </div>
+    <div class="testimonial-slide">
+     <img alt="Client 4" src="assets/test8.jpg"/>
+     <div class="stars">
+      ★★★★☆
+     </div>
+     <p>
+      "Great results, efficient process and excellent support."
+     </p>
+     <h4>
+      - Anushka Bajpai
+     </h4>
+    </div>
+    <!-- Add more slides as needed -->
+    <button class="carousel-btn prev" onclick="prevTestimonial()">
+     ❮
+    </button>
+    <button class="carousel-btn next" onclick="nextTestimonial()">
+     ❯
+    </button>
+   </div>
+  </section>
+  <script>
+   let current = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function nextTestimonial() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  function prevTestimonial() {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  }
+
+  // Auto play every 3 seconds
+  setInterval(nextTestimonial, 3000);
+
+  // Initialize
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlide(current);
+  });
+  </script>
+  <!--FAQ SECTION-->
+  <div class="faq-section">
+   <div class="faq-title">
+    Frequently asked
+    <span class="highlight">
+     questions
+    </span>
+   </div>
+   <div class="faq-container">
+    <div class="faq-item">
+     <h3>
+      1. What kind of businesses do you usually work with?
+     </h3>
+     <div class="faq-answer">
+  We work with startups, small businesses, and large enterprises across industries like retail, healthcare, education, finance, and more.
+     </div>
+    </div>
+    <div class="faq-item">
+     <h3>
+      2. Can you handle everything — design, development, and support?
+     </h3>
+     <div class="faq-answer">
+    Yes! From planning and design to building and maintaining your tech, we handle it all so you can focus on your business.
+     </div>
+    </div>
+    <div class="faq-item">
+     <h3>
+      3. Do I need to be tech-savvy to work with you?
+     </h3>
+     <div class="faq-answer">
+      Not at all! We explain things clearly and keep you involved without overwhelming you with technical jargon.
+     </div>
+    </div>
+    <div class="faq-item">
+     <h3>
+      4.Is there a minimum budget to start working with you?
+     </h3>
+     <div class="faq-answer">
+    We offer flexible plans for different budgets. Whether you're just starting or scaling, we have a solution that fits.
+     </div>
+    </div>
+    <div class="faq-item">
+     <h3>
+      5.How will I track the progress of my project?
+     </h3>
+     <div class="faq-answer">
+      We provide regular updates, clear timelines, and simple reports so you always know what's happening.
+     </div>
+    </div>
+    <div class="faq-item">
+     <h3>
+      6. Do you provide training or onboarding for our team?
+     </h3>
+     <div class="faq-answer">
+      Yes. We make sure your team knows how to use everything we deliver through easy training sessions and documentation.
+     </div>
+    </div>
+    <div class="faq-item">
+     <h3>
+      7.What happens if we need changes later?
+     </h3>
+     <div class="faq-answer">
+    No problem! We offer post-launch support and updates so your tech grows with your business.
+     </div>
+    </div>
+    <div class="faq-item">
+     <h3>
+      8. Do you work with international clients?
+     </h3>
+     <div class="faq-answer">
+      Yes! Our team supports businesses globally — we collaborate online, across time zones, with no compromise on quality.
+
+
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+  </script>
+  <!--Branding-->
+  <section class="hero-brand">
+   <p class="hero-subtitle">
+    LET'S COLLABORATE
+   </p>
+   <h1 class="hero-title" style="font-size: 9rem;">
+    ELEVATE YOUR
+   </h1>
+   <br/>
+   <h1 class="hero-title">
+    BRAND GAME
+   </h1>
+   <a class="hero-button" href="Contact us/contact.html">
+    ↗
+    <br>
+     Get In Touch
+    </br>
+   </a>
+  </section>
+  <br/>
+  <!--footer for address and all-->
+  <footer class="custom-footer">
+   <div class="footer-container">
+    <div class="footer-left">
+     <img alt="Logo" class="footer-logo" src="assets/vdv logo wb.png">
+      <div class="contact-box">
+       <div class="contact-row">
+        <div class="icon-circle">
+         <i class="fas fa-envelope">
+         </i>
+        </div>
+        <div>
+         <p>
+          vinayakadigiverse@gmail.com
+         </p>
+        </div>
+       </div>
+       <div class="contact-row">
+        <div class="icon-circle phone">
+         <i class="fas fa-phone-alt">
+         </i>
+        </div>
+        <div>
+         <p>
+          Need help!
+         </p>
+         <h3>
+          +91–7083021583
+         </h3>
+         <h3>
+          +91–9039592878
+         </h3>
+        </div>
+       </div>
+       <div class="contact-row">
+        <div class="icon-circle">
+         <i class="fas fa-map-marker-alt">
+         </i>
+        </div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <p>
+         Branch 1:– INDORE - 452009 (M.P.)
+         <br/>
+         Branch 2:– NAGPUR - 440027 (M.H.)
+=======
+        <p style="font-size: 0.70rem !important; text-align: left;">
+         Branch 1:– INDORE -452009 (M.P)
+         <br/>
+         Branch 2:– NAGPUR -440027 (M.H)
+>>>>>>> f689104 (Updated HTML file)
+        </p>
+=======
+         <p>Branch 1:– INDORE - 452009 (M.P.) <br> <br>Branch 2:– NAGPUR - 440027 (M.H.)</p>
+>>>>>>> 4b46274 (Updated HTML and CSS files)
+       </div>
+      </div>
+     </img>
+    </div>
+    <div class="footer-links">
+     <div>
+      <h4>
+       Quick Link
+      </h4>
+      <ul>
+       <a href="index.html" style="color: white; text-decoration: none; ">
+        <li>
+         Home
+        </li>
+       </a>
+       <a href="about-us.html" style="color: white; text-decoration: none;">
+        <li>
+         About Us
+        </li>
+       </a>
+       <a href="Blog/blog.html" style="color: white; text-decoration: none;">
+        <li>
+         Blogs
+        </li>
+       </a>
+       <a href="Pricing/Pricing.html" style="color: white; text-decoration: none;">
+        <li>
+         Pricing
+        </li>
+       </a>
+      </ul>
+     </div>
+     <div>
+      <h4>
+       Services
+      </h4>
+      <ul>
+       <a href="Solutions/SMM&amp;M.html" style="color: white; text-decoration: none;">
+        <li>
+         SOCIAL MEDIA MARKETING
+        </li>
+       </a>
+       <a href="Solutions/Website design.html" style="color: white; text-decoration: none;">
+        <li>
+         WEB DEVELOPMENT
+        </li>
+       </a>
+       <a href="Solutions/content writing.html" style="color: white; text-decoration: none;">
+        <li>
+         CONTENT WRITING
+        </li>
+       </a>
+       <a href="Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;">
+        <li>
+         GRAPHICS DESIGNING
+        </li>
+       </a>
+       <a href="Solutions/professional photography.html" style="color: white; text-decoration: none;">
+        <li>
+         PHOTOGRAPHY &amp; VIDEOGRAPHY
+        </li>
+       </a>
+       <a href="Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;">
+        <li>
+         VIDEO EDITING
+        </li>
+       </a>
+      </ul>
+     </div>
+     <div>
+      <h4>
+       Support
+      </h4>
+      <ul>
+       <a href="index.html" style="color: white; text-decoration: none;">
+        <li>
+         Privacy Policy
+        </li>
+       </a>
+       <a href="index.html" style="color: white; text-decoration: none;">
+        <li>
+         Refund Policy
+        </li>
+       </a>
+       <a href="Contact us/contact.html" style="color: white; text-decoration: none;">
+        <li>
+         Contact Us
+        </li>
+       </a>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>
+     © Vinayaka Digiverse All Rights Reserved.
+    </p>
+    <div class="social-icons">
+     <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+      <i class="fab fa-facebook">
+      </i>
+     </a>
+     <a href="https://www.instagram.com/vdv__marketing?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a href="https://pin.it/TRHvAUtrw" target="_blank">
+      <i class="fab fa-pinterest">
+      </i>
+     </a>
+     <a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
