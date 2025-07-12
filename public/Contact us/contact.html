@@ -7,7 +7,7 @@
   <title>Vinayaka Digiverse</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
-  <script src="../server.js"></script>
+  
   <script src="../first.js"></script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -328,8 +328,10 @@
     <div class="contact-form">
       <h4>✱ CONTACT US</h4>
       <h2>Reach out for <span>Business excellence</span></h2>
-      <form id="contactForm" action="http://localhost:3000/send" method="POST">
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
         <div class="form-row">
+              <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="fb634c5a-5474-4592-b136-9ec2d49cc928">
           <input type="text" name="firstname" placeholder="First name" required />
           <input type="text" name="lastName" placeholder="Last name" required/>
         </div>
@@ -341,29 +343,6 @@
         <button type="submit" class="send-btn">Send Message</button>
       </form>
     </div>
-
- <script>
-  document.getElementById("contactForm").addEventListener("submit", async function(e) {
-    e.preventDefault();
-
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData.entries());
-
-    const res = await fetch("http://localhost:3000/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    });
-
-    if (res.ok) {
-      window.location.href = "thankyou.html"; // ✅ only change
-    } else {
-      alert("❌ Error sending message.");
-    }
-  });
-</script>
 
 
     <div class="contact-info-box">

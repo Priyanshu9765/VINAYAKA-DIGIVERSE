@@ -168,7 +168,26 @@ body {
     font-size: 1.1rem;
   }
 }
-
+@media (max-width: 800px) {
+  .project-grid {
+    display: grid !important; /* force grid */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 450px) {
+  .project-grid {
+    display: grid !important; /* force grid */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .project-card img{
+    height: 120px;
+    width: 130px;
+  }
+}
 /* === Fix 2: Hero section font size === */
 @media (max-width:400px) {
   .hero-text h2 {
@@ -635,11 +654,11 @@ MOTION GRAPHICS EDITING
       </img>
      </div>
      <div class="about-right">
-<<<<<<< HEAD
+
       <p class="section-subtitle" style="font-size: 2rem; text-align: center;">
-=======
+        
       <p class="section-subtitle">
->>>>>>> f689104 (Updated HTML file)
+
        ABOUT COMPANY
       </p>
       <h2>
@@ -721,34 +740,6 @@ that meet your business needs.
    </div>
   </section>
   <!--OUR TECHNOLOGY SECTION-->
-<<<<<<< HEAD
-<section class="technology-section">
-  <h2>OUR TECHNOLOGIES</h2>
-  <div class="tech-circle-wrapper">
-    <div class="circle-border"></div>
-    <div class="logo-container" id="logoContainer">
-      <img src="images/html.png" alt="HTML" class="logo">
-      <img src="images/css.png" alt="CSS" class="logo">
-      <img src="images/js.png" alt="JavaScript" class="logo">
-      <img src="images/jquery.png" alt="jQuery" class="logo">
-      <img src="images/bootstrap.png" alt="Bootstrap" class="logo">
-      <img src="images/php.png" alt="PHP" class="logo">
-      <img src="images/cakephp.png" alt="CakePHP" class="logo">
-      <img src="images/wordpress.png" alt="WordPress" class="logo">
-      <img src="images/angular.png" alt="Angular" class="logo">
-      <img src="images/nodejs.png" alt="NodeJS" class="logo">
-      <img src="images/magento.png" alt="Magento" class="logo">
-      <img src="images/sass.png" alt="Sass" class="logo">
-      <img src="images/laravel.png" alt="Laravel" class="logo">
-      <img src="images/android.png" alt="Android" class="logo">
-    </div>
-    <div class="center-person">
-      <img src="images/person.png" alt="Developer">
-    </div>
-  </div>
-</section>
-=======
->>>>>>> f689104 (Updated HTML file)
 
   <!-- Testimonials Section -->
   <section class="testimonials-section" id="testimonials">
@@ -1083,22 +1074,14 @@ that meet your business needs.
          <i class="fas fa-map-marker-alt">
          </i>
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <p>
-         Branch 1:– INDORE - 452009 (M.P.)
-         <br/>
-         Branch 2:– NAGPUR - 440027 (M.H.)
-=======
+
         <p style="font-size: 0.70rem !important; text-align: left;">
          Branch 1:– INDORE -452009 (M.P)
          <br/>
          Branch 2:– NAGPUR -440027 (M.H)
->>>>>>> f689104 (Updated HTML file)
         </p>
-=======
-         <p>Branch 1:– INDORE - 452009 (M.P.) <br> <br>Branch 2:– NAGPUR - 440027 (M.H.)</p>
->>>>>>> 4b46274 (Updated HTML and CSS files)
+      
+
        </div>
       </div>
      </img>

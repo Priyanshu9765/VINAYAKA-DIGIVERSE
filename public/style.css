@@ -6,6 +6,16 @@
 html {
   scroll-behavior: smooth;
 }
+@media(max-width:450px){
+  .about-right p {
+    text-align: center !important;
+    font-size: 1.2rem !important;
+    margin-left: 15%;
+  }
+  .about-right h2{
+    font-size: 1.3rem !important;
+  }
+}
 /*Sidebar for phones*/
 /* Header Layout */
 .logo-container {
@@ -2223,7 +2233,7 @@ nav a:hover {
 }
 
 /* ===== 📱 Small Phones (iPhone SE, narrow screens) ===== */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   h1, h2, h3 {
     font-size: clamp(1rem, 4vw, 1.5rem);
     text-align: center;
@@ -2420,6 +2430,8 @@ nav a:hover {
     font-size: 0.9rem;
   }
 
+
+
 }
 
 /*FOOTER SOCIAL ICONS*/
@@ -2440,4 +2452,7 @@ nav a:hover {
      background: #c0ff73;
   }
   /*OUR TECHNOLOGY SECTION*/
-  
+  /*footer section*/
+  .footer-links{
+    text-align: left !important;
+  }
