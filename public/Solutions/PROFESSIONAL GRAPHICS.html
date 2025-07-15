@@ -638,10 +638,114 @@
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }
+.graphics-designing-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.gd-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gd-text {
+  flex: 1 1 500px;
+  padding-right: 40px;
+}
+
+.gd-label {
+  display: inline-block;
+  background: #FF5C00; /* orange label */
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gd-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.gd-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gd-text ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+  color: #000; /* li text color */
+}
+
+.gd-text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #007BFF; /* blue tick */
+  font-weight: bold;
+}
+
+.gd-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.gd-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .gd-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .gd-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .gd-text ul li {
+    padding-left: 24px;
+    text-align: left;
+  }
+}
 
 </style>
-<section>
+
+  <br><br>
+  <section class="graphics-designing-section">
+  <div class="gd-container">
+    <div class="gd-text">
+      <div class="gd-label">SERVICE</div>
+      <h2>Why Your Business Needs Graphic Designing</h2>
+      <ul>
+        <li>Build a Strong Brand Identity</li>
+        <li>Create Eye-Catching Visuals</li>
+        <li>Communicate Ideas Effectively</li>
+        <li>Boost Engagement & Conversions</li>
+        <li>Stay Ahead of Competitors</li>
+        <li>Enhance Professionalism & Trust</li>
+        <li>Support Marketing Campaigns</li>
+        <li>Maintain Visual Consistency</li>
+      </ul>
+    </div>
+    <div class="gd-image">
+      <img src="your-graphics-designing-image.png" alt="Graphics Designing Service">
+    </div>
+  </div>
+</section>
+
   <!--FAQ SECTION-->
+  <section>
  <div class="faq-section">
   <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
 

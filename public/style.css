@@ -2456,3 +2456,97 @@ nav a:hover {
   .footer-links{
     text-align: left !important;
   }
+
+
+  /* Why Business Needs Website Section */
+.business-website-section {
+  padding: 60px 20px;
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.business-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.business-text {
+  flex: 1 1 500px;
+}
+
+.business-text .section-label {
+  background: #ff5722;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.business-text h2 {
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.business-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.business-text ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #333;
+}
+
+.business-text ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.business-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.business-image img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .business-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .business-text {
+    flex: 1 1 100%;
+  }
+  .business-text h2 {
+    font-size: 28px;
+  }
+  .business-image {
+    flex: 1 1 100%;
+  }
+}
+/*web dev section*/

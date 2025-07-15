@@ -776,10 +776,115 @@ span{
     padding-left: 15px;
   }
 }
+.photo-video-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.pv-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.pv-text {
+  flex: 1 1 500px;
+  padding-right: 40px;
+}
+
+.pv-label {
+  display: inline-block;
+  background: #FF5C00; /* orange label */
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pv-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.pv-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pv-text ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+  color: #000; /* li text color */
+}
+
+.pv-text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #007BFF; /* blue tick */
+  font-weight: bold;
+}
+
+.pv-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.pv-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .pv-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pv-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .pv-text ul li {
+    padding-left: 24px;
+    text-align: left;
+  }
+}
 
 </style>
-<section>
+
+  <br><br>
+  <section class="photo-video-section">
+  <div class="pv-container">
+    <div class="pv-text">
+      <div class="pv-label">SERVICE</div>
+      <h2>Why Your Business Needs Photography & Videography</h2>
+      <ul>
+        <li>Showcase Products & Services Visually</li>
+        <li>Build Strong Visual Storytelling</li>
+        <li>Capture Attention on Social Media</li>
+        <li>Boost Credibility & Trust</li>
+        <li>Enhance Marketing Campaigns</li>
+        <li>Create Memorable Brand Identity</li>
+        <li>Drive Engagement & Conversions</li>
+        <li>Stand Out from Competitors</li>
+      </ul>
+    </div>
+    <div class="pv-image">
+      <img src="your-photo-video-image.png" alt="Photography and Videography Service">
+    </div>
+  </div>
+</section>
+
   <!--FAQ SECTION-->
+  <section>
+
  <div class="faq-section">
   <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
 

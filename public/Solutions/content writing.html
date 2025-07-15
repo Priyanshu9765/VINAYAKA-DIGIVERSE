@@ -537,10 +537,116 @@ span{
     font-size: 1rem;
   }
 }
+
+.content-writing-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.cw-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cw-text {
+  flex: 1 1 500px;
+  padding-right: 40px;
+}
+
+.cw-label {
+  display: inline-block;
+  background: #FF5C00; /* orange label */
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cw-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.cw-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cw-text ul li {
+  margin-bottom: 12px;
+  position: relative;
+  color: #000;
+  padding-left: 30px;
+  font-size: 21px;
+}
+
+.cw-text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #007BFF; /* blue tick */
+  font-weight: bold;
+}
+
+.cw-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.cw-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .cw-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cw-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .cw-text ul li {
+    padding-left: 24px;
+    text-align: left;
+  }
+}
+
 </style>
 
-<section>
+
+  <br><br>
+  <section class="content-writing-section">
+  <div class="cw-container">
+    <div class="cw-text">
+      <div class="cw-label">SERVICE</div>
+      <h2>Why Your Business Needs Content Writing</h2>
+      <ul>
+        <li>Attract & Retain Target Audience</li>
+        <li>Improve Search Engine Rankings (SEO)</li>
+        <li>Build Brand Authority & Trust</li>
+        <li>Educate & Inform Your Customers</li>
+        <li>Drive Organic Website Traffic</li>
+        <li>Increase Conversion Rates</li>
+        <li>Support Social Media & Ads</li>
+        <li>Establish Consistent Brand Voice</li>
+      </ul>
+    </div>
+    <div class="cw-image">
+      <img src="your-content-writing-image.png" alt="Content Writing Service">
+    </div>
+  </div>
+</section>
+
   <!--FAQ SECTION-->
+  <section>
  <div class="faq-section">
   <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
 

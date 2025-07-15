@@ -18,7 +18,7 @@
 
   <header>
     <div class="logo">
-      <img  class="logo-img" src="assets/WhatsApp Image 2025-05-22 at 11.05.37_d396cf66.jpg" alt="Vinayaka Digiverse Logo" />
+      <img  class="logo-img" src="../assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
     </div>
 
 <nav>
@@ -32,75 +32,74 @@
 
         <!-- Graphic Design submenu -->
         <li class="has-submenu">
-          <a href="#">Graphic Design ▸</a>
-          <ul class="submenu">
-            <li><a href="logo.html">Logo Designing</a></li>
-            <li><a href="Brochure.html">Brochure Designing</a></li>
-            <li><a href="festivalimage.html">Festival Image Design</a></li>
-            <li><a href="motion.html">Motion Graphics Editing</a></li>
-          </ul>
+          <a href="../Solutions/SMM&M.html">SOCIAL MEDIA
+             MARKETING</a>
         </li>
 
         <!-- Web Design submenu -->
         <li class="has-submenu">
-          <a href="#">Web Design ▸</a>
-          <ul class="submenu">
-            <li><a href="#">Website Design</a></li>
-            <li><a href="#">Website Development</a></li>
-            <li><a href="#">WordPress Development</a></li>
-            <li><a href="#">Figma Website Development</a></li>
-          </ul>
+          <a href="../Solutions/Website design.html">WEB DEVELOPMENT
+ </a>
         </li>
 
         <!-- Custom Applications submenu -->
         <li class="has-submenu">
-          <a href="#">Content ▸</a>
-          <ul class="submenu">
-            <li><a href="#">Content Writing</a></li>
-            <li><a href="#">Content Creation</a></li>
-            
-          </ul>
+          <a href="../Solutions/content writing.html">CONTENT WRITING 
+</a>
         </li>
 
         <!-- VIDEO & PRINTING submenu -->
 <li class="has-submenu">
-  <a href="#">Video & Printing ▸</a>
-  <ul class="submenu">
-    <li><a href="#">Premium Printing</a></li>
-    <li><a href="#">Professional Photography</a></li>
-    <li><a href="#">Professional Cinematography</a></li>
-    <li><a href="#">Professional Video Editing</a></li>
-
-    
-  </ul>
+  <a href="../Solutions/PROFESSIONAL GRAPHICS.html">GRAPHICS
+ DESIGNING</a>
 </li>
 
         <!-- Marketing submenu -->
         <li class="has-submenu">
-          <a href="#">Marketing ▸</a>
-          <ul class="submenu">
-            <li><a href="#">SOCIAL MEDIA MANAGEMENT</a></li>
-            <li><a href="#">SOCIAL MEDIA MARKETING</a></li>
-            <li><a href="#">SEO</a></li>
-            <li><a href="#">SEM</a></li>
-            <li><a href="#">Digital Marketing</a></li>
-          </ul>
+          <a href="../Solutions/professional photography.html">  PHOTOGRAPHY &
+ VIDEOGRAPHY </a>
         </li>
+
+
+               <li class="has-submenu">
+         <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html">VIDEO EDITING 
+ </a>
+       </li>
 
       </ul>
     </li>
 
-    <li><a href="#">Products</a></li>
-    <li><a href="#">Blogs</a></li>
-    <li><a href="#">Pricing</a></li>
-    <li><a href="#">Get in touch</a></li>
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
   </ul>
+  <div style= "text-align:right; " class="hamburger" onclick="openSidebar()">☰</div>
 </nav>
-
-
+<!-- ✅ Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <ul class="mobile-menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+    <li class="mobile-dropdown">
+      <a href="#" onclick="toggleSidebarDropdown(event)">Solutions ▾</a>
+      <ul class="mobile-dropdown-menu">
+        <li><a href="SMM&M.html">Social Media Marketing</a></li>
+        <li><a href="Website design.html">Web Development</a></li>
+        <li><a href="content writing.html">Content Writing</a></li>
+        <li><a href="PROFESSIONAL GRAPHICS.html">Graphics Designing</a></li>
+        <li><a href="professional photography.html">Photography & Videography</a></li>
+        <li><a href="PROFESSIONAL VIDEO EDITING.html">Video Editing</a></li>
+      </ul>
+    </li>
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</div>
   </header>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="styles
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -298,10 +297,14 @@
 </head>
 <body>
 
-
+<style>
+  .blog-section{
+    max-width: 1400px;
+  }
+</style>
 <!-- Website Design Hero Section -->
 <section style="background: #000; color: white; padding: 60px 20px; font-family: 'Arial', sans-serif;">
-  <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+  <div style="max-width: 1600px; width: 100%; margin: 0 auto; text-align: center;" class="blog-section">
     
     <!-- Title -->
     <h1 style="font-size: 48px; font-weight: 600; margin-bottom: 15px;">
@@ -324,8 +327,6 @@
   </div>
 </section>
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -507,12 +508,19 @@
 </body>
 </html>
 
-
+<style>
+  @media (min-width:1024px) and (max-width: 2550px) {
+    .hero-brand{
+      width: 100%;
+      max-width: 1500px;
+    }
+  }
+</style>
 <!--Branding-->
 <section class="hero-brand">
   <p class="hero-subtitle">LET'S COLLABORATE</p>
   <h1 class="hero-title">
-    ELEVATE YOUR BRAND<br />
+    ELEVATE YOUR <br>BRAND
     GAME
   </h1>
   <a href="#contact" class="hero-button">
@@ -525,22 +533,22 @@
 <footer class="custom-footer">
   <div class="footer-container">
     <div class="footer-left">
-      <img src="your-logo.png" alt="Logo" class="footer-logo" />
+      <img src="../assets/vdv logo wb.png" alt="Logo" class="footer-logo" />
       <div class="contact-box">
         <div class="contact-row">
           <div class="icon-circle">
             <i class="fas fa-envelope"></i>
           </div>
           <div>
-            <p>labs@siteadda.com</p>
-            <p>sales@siteadda.com</p>
+            <p>vinayakadigiverse@gmail.com</p>
+            
           </div>
         </div>
         <div class="contact-row">
           <div class="icon-circle">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <p>163–B, Kesar Bagh Road, INDORE - 452009 (M.P.)</p>
+          <p>INDORE - 452009 (M.P.)</p>
         </div>
         <div class="contact-row">
           <div class="icon-circle phone">
@@ -548,60 +556,79 @@
           </div>
           <div>
             <p>Need help!</p>
-            <h3>+91–7310000012</h3>
+            <h3>+91–9039592878</h3>
+            <h3>+91-7083021583</h3>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="footer-links">
+        <div class="footer-links">
       <div>
         <h4>Quick Link</h4>
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Products</li>
-          <li>Blogs</li>
+          <a href="../index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="../about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="../Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+           <a href="../Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+           
         </ul>
       </div>
       <div>
         <h4>Services</h4>
         <ul>
-          <li>Graphic Designing</li>
-          <li>Website Designing</li>
-          <li>Website Development</li>
-          <li>Digital Marketing</li>
-        </ul>
+                  <ul>
+         <a href="../Solutions/SMM&M.html" style="color: white; text-decoration: none;" > <li>SOCIAL MEDIA 
+MARKETING</li></a>
+          <a href="../Solutions/Website design.html" style="color: white; text-decoration: none;" > 
+<li>WEB DEVELOPMENT</li></a>
+
+           <a href="../Solutions/content writing.html" style="color: white; text-decoration: none;
+"><li>CONTENT WRITING</li></a>
+           <a href="../Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;
+"><li>GRAPHICS DESIGNING</li></a>
+           <a href="../Solutions/professional photography.html" style="color: white; text-decoration: none;
+"><li>PHOTOGRAPHY & VIDEOGRAPHY</li></a>
+
+           <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;
+" 
+> 
+<li>VIDEO EDITING</li></a>
+     </ul>
       </div>
       <div>
         <h4>Support</h4>
         <ul>
-          <li>Privacy Policy</li>
-          <li>Refund Policy</li>
-          <li>Contact Us</li>
-        </ul>
-      </div>
-    </div>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+          <a href="../Contact us/contact.html " style="color: white; text-decoration: none;"><li>Contact Us</
+li></a>
+
+                 </ul>
+     </div>
+   </div>
   </div>
 
-  <div class="about-company">
-    <h2><b>About Our Company</b>  </h2>
-    <p>
-      Amazing design and experiences can only be achieved by talented people.
-      Luckily for us, we are surrounded by amazing talent and that talent
-      transcends their expertise into fantastic experiences. SITEADDA LABS has
-      successfully helped design and implement web sites for many clients
-      worldwide.
-    </p>
-  </div>
 
   <div class="footer-bottom">
-    <p>© Siteadda Labs All Rights Reserved.</p>
-    <div class="social-icons">
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-pinterest"></i>
-    </div>
+    <p>© Vinayaka Digiverse All Rights Reserved.</p>
+        <div class="social-icons">
+      <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/annry_editx?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://pin.it/TRHvAUtrw" target="_blank">
+  <i class="fab fa-pinterest"></i>
+</a>
+<a href="https://www.linkedin.com/in/priyanshu-borekar-30444a371?utm_source=share&utm_campaign=share_via&
+utm_content=profile&utm_medium=android_app" target="_blank">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+</div>
   </div>
 </footer>
 

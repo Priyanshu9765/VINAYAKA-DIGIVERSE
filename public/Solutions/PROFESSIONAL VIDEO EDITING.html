@@ -756,9 +756,113 @@ message and maintains a professional standard.
     max-width: 90%;
   }
 }
+.video-editing-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.ve-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ve-text {
+  flex: 1 1 500px;
+  padding-right: 40px;
+}
+
+.ve-label {
+  display: inline-block;
+  background: #FF5C00; /* orange label */
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ve-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.ve-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ve-text ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+  color: #000; /* li text color */
+}
+
+.ve-text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #007BFF; /* blue tick */
+  font-weight: bold;
+}
+
+.ve-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.ve-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .ve-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ve-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .ve-text ul li {
+    padding-left: 24px;
+    text-align: left;
+  }
+}
 
 </style>
+<br><br>
+<section class="video-editing-section">
+  <div class="ve-container">
+    <div class="ve-text">
+      <div class="ve-label">SERVICE</div>
+      <h2>Why Professional Video Editing Matters</h2>
+      <ul>
+        <li>Create Engaging & Polished Videos</li>
+        <li>Enhance Brand Storytelling</li>
+        <li>Boost Social Media Performance</li>
+        <li>Increase Audience Retention</li>
+        <li>Stand Out with High-Quality Edits</li>
+        <li>Maximize ROI on Video Content</li>
+        <li>Save Time & Resources</li>
+        <li>Deliver Consistent Visual Style</li>
+      </ul>
+    </div>
+    <div class="ve-image">
+      <img src="your-video-editing-image.png" alt="Video Editing Service">
+    </div>
+  </div>
+</section>
+
 <section>
+
   <!--FAQ SECTION-->
  <div class="faq-section">
   <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>

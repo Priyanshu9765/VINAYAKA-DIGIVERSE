@@ -589,8 +589,114 @@
   }
 }
 
+.smm-section {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.smm-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.smm-text {
+  flex: 1 1 500px;
+  padding-right: 40px;
+}
+
+.smm-label {
+  display: inline-block;
+  background: #FF5C00; /* orange label */
+  color: #fff;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.smm-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.smm-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.smm-text ul li {
+  margin-bottom: 12px;
+  color: #000;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.smm-text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #007BFF; /* blue tick */
+  font-weight: bold;
+}
+
+.smm-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.smm-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .smm-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .smm-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .smm-text ul li {
+    padding-left: 24px;
+    text-align: left;
+  }
+}
+
 </style>
+<br><br>
+<section class="smm-section">
+  <div class="smm-container">
+    <div class="smm-text">
+      <div class="smm-label">SERVICE</div>
+      <h2>Why Your Business Needs Social Media Marketing</h2>
+      <ul>
+        <li>Build Brand Awareness & Trust</li>
+        <li>Engage Directly With Customers</li>
+        <li>Generate Quality Leads</li>
+        <li>Boost Website Traffic</li>
+        <li>Improve Customer Loyalty</li>
+        <li>Stay Ahead of Competitors</li>
+        <li>Track & Analyze Campaigns</li>
+        <li>Cost-Effective Marketing</li>
+      </ul>
+    </div>
+    <div class="smm-image">
+      <img src="your-social-image.png" alt="Social Media Marketing">
+    </div>
+  </div>
+</section>
+
 <!--FAQ SECTION-->
+<section>
+
 <div class="faq-section">
 <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
 <div class="faq-container">
