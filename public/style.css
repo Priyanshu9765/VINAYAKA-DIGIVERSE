@@ -566,7 +566,7 @@ html {
   }
 }
 html,body {
-   background-image: url('assets/bc\ image.png'); /* or full URL if hosted online */
+   background-image: url('assets/VDV\ WEB\ BG\ MOBILE\ MAIN\ hotrizontal.png'); /* or full URL if hosted online */
   background-repeat: repeat;
   background-size: auto; /* or use `cover`, `contain`, or specific size */
   background-position: top left;
@@ -837,9 +837,25 @@ nav a:hover {
 
 
 /* ABOUT SECTION */
+@media (max-width:400px){
+  .about-right p {
+  font-size: 0.7rem !important ;
+   text-align: center;
+  padding-right: 5rem;
+  }
 
+  .stat-number {
+    font-size: 1.2rem !important;
+  }
+   .project-complete span{
+    font-size: 0.8rem !important;
+  }
+  .project-complete p{
+ font-size: 0.8rem !important;
+  }
+}
 .about-right p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
    text-align: center;
   padding-right: 5rem;
   }
