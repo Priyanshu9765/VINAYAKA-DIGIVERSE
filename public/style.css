@@ -6,6 +6,13 @@
 html {
   scroll-behavior: smooth;
 }
+.hero-image video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* same effect as your image */
+  object-fit: cover; /* ensures it doesn’t stretch weirdly */
+}
+
 @media(max-width:450px){
   .about-right p {
     text-align: center !important;
