@@ -2573,3 +2573,34 @@ nav a:hover {
   }
 }
 /*web dev section*/
+/* container - remove inline gap and let images size cleanly */
+.logo-container {
+  display: inline-block;
+  line-height: 0;
+}
+
+/* common rules for both images */
+.logo-img {
+  display: block;      /* remove whitespace below images */
+  max-width: 100%;     /* responsive */
+  height: auto;
+  object-fit: contain;
+}
+
+/* default: show desktop logo, hide mobile logo */
+.desktop-logo { display: block !important; }
+.mobile-logo  { display: none  !important; }
+
+/* breakpoint for phones: swap logos */
+@media (max-width: 767px) {
+  .desktop-logo { display: none !important; }
+  .mobile-logo  { display: block !important; }
+
+  /* optional: control mobile logo visual size */
+  .logo-container .logo-img { width: 120px; } /* tweak value as needed */
+}
+
+/* optional: explicit desktop size */
+@media (min-width: 768px) {
+  .logo-container .logo-img { width: 220px; } /* tweak as needed */
+}
