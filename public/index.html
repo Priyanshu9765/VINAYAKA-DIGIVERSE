@@ -18,6 +18,19 @@
     <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
     <link rel="preload" href="style.css" as="style">
 
+<!-- Faster Loading Optimizations -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Preconnect to speed up external resources (fonts, cdns, etc.) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Load fonts faster -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Defer JavaScript (load after page renders) -->
+<script src="first.js" defer></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     </link>
@@ -246,7 +259,7 @@ body {
   <!-- Default image (desktop and larger screens) -->
    <img alt="Vinayaka Digiverse Logo" class="logo-img desktop-logo" style="width: 25rem;" loading="lazy" src="assets/vdv fulllogo.png"/>
 
-   
+
  <!-- Mobile/Phone logo -->
   <img alt="Vinayaka Digiverse Mobile Logo" class="logo-img mobile-logo" style="width: 4rem !important; margin-left: 2px;" loading="lazy" src="assets/VDV LOGO HS .png"/>
    </div>
