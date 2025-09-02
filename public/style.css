@@ -263,6 +263,7 @@ html {
 
   .hero-image img {
     width: 100%;
+    max-width: 320px;
     height: auto;
     border-radius: 10px;
   }
