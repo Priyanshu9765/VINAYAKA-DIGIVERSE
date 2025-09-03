@@ -263,7 +263,6 @@ html {
 
   .hero-image img {
     width: 100%;
-    max-width: 320px;
     height: auto;
     border-radius: 10px;
   }
@@ -345,6 +344,7 @@ html {
   .hero-image {
     max-width: 280px;
     margin-top: 15px;
+    
   }
 }
 
