@@ -45,4 +45,32 @@
 
 
   //Our technology Section//
-  
+     let current = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function nextTestimonial() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  function prevTestimonial() {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  }
+
+  // Auto play every 3 seconds
+  setInterval(nextTestimonial, 3000);
+
+  // Initialize
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlide(current);
+  });

@@ -12,6 +12,19 @@ html {
   border-radius: 12px; /* same effect as your image */
   object-fit: cover; /* ensures it doesn’t stretch weirdly */
 }
+/* Hide on small screens */
+@media (max-width: 768px) {
+  .hero-image {
+    display: none !important;
+  }
+}
+
+/* Show on bigger screens */
+@media (min-width: 769px) {
+  .hero-image {
+    display: block !important;
+  }
+}
 
 @media(max-width:450px){
   .about-right p {
