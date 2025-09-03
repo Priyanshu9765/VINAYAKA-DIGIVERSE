@@ -24,42 +24,6 @@
 
 //what we do section
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll('.counter');
-
-    const animateCounter = (counter) => {
-      const target = +counter.getAttribute('data-target');
-      const duration = 2000; // 2 seconds
-      const startTime = performance.now();
-
-      const update = (currentTime) => {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        counter.innerText = Math.floor(progress * target);
-        if (progress < 1) {
-          requestAnimationFrame(update);
-        } else {
-          counter.innerText = target.toLocaleString();
-        }
-      };
-
-      requestAnimationFrame(update);
-    };
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !entry.target.classList.contains("counted")) {
-          animateCounter(entry.target);
-          entry.target.classList.add("counted");
-        }
-      });
-    }, { threshold: 0.6 });
-
-    counters.forEach(counter => {
-      observer.observe(counter);
-    });
-  });
-
 //FOR Phones
   function toggleSidebar() {
       document.getElementById('sidebar').classList.toggle('active');
