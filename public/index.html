@@ -2,6 +2,7 @@
 <html lang="en">
  <head>
 
+  
   <!--google analytics-->
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YL1HY30GT"></script>
@@ -492,6 +493,23 @@ body {
       SERVICES
      </span>
     </h2>
+
+    <!--This is code for images for different screen sizes-->
+    <picture>
+  <!-- For small phones -->
+  <source srcset="images/hero-mobile.webp" media="(max-width: 600px)">
+  
+  <!-- For tablets -->
+  <source srcset="images/hero-tablet.webp" media="(max-width: 1200px)">
+  
+  <!-- Default for laptops/desktops -->
+  <img src="images/hero-desktop.webp" 
+       alt="Vinayaka Digiverse - Digital Marketing Services" 
+       width="1920" height="800" 
+       loading="lazy">
+</picture>
+
+
     <div class="service-cards">
      <div class="card">
       <img alt="Service 1" id="img1" rel = "preload" loading="lazy" src="assets/25025577_7038056.svg"/>
