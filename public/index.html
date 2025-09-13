@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-
-  
+<link rel="stylesheet" href="main.css" >
   <!--google analytics-->
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YL1HY30GT"></script>
@@ -31,10 +30,8 @@
  
 <style>html{scroll-behavior:smooth}</style>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+ 
   <link href="style.css" rel="stylesheet">
-   
-   </script>
 
 <!-- Preconnect to speed up external resources (fonts, cdns, etc.) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,233 +42,18 @@
     </link>
    </link>
   </link>
-  <style>
-  
 
-/* Prevent horizontal scroll */
-body {
-  overflow-x: hidden;
-   font-family: 'Poppins', sans-serif;
-}
-.projects-section {
-  padding: 80px 20px;
-  color: white;
-  max-width: 1440px;
-  margin: auto;
-}
-
-.projects-heading h5 {
-  color: #ABFF25;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.projects-heading h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.projects-heading h2 span {
-  color: #ABFF25;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  justify-content: center;
-  align-items: stretch;
-  padding: 0 20px;
-}
-
-.project-card {
-  background: #0a0f0a;
-  border-radius: 20px;
-  overflow: hidden;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-  display: block;
-  border-radius: 0;
-}
-
-.project-card:hover img {
-  transform: scale(1.05);
-}
-
-.project-info {
-  padding: 20px;
-  text-align: center;
-}
-
-.project-info .category {
-  color: #ABFF25;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.project-info h3 {
-  font-size: 1rem;
-  color: white;
-  line-height: 1.4;
-}
-
-@media (max-width: 1024px) {
-  .project-info h3 {
-    font-size: 1rem;
-  }
-  .project-card img {
-    height: 260px;
-  }
-}
-
-@media (max-width: 768px) {
-  .projects-heading h2 {
-    font-size: 1.7rem;
-  }
-  .project-card {
-    width: 100%;
-  }
-  .project-card img {
-    height: 300px;
-  }
-  .project-info h3 {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .projects-heading h2 {
-    font-size: 1.5rem;
-  }
-  .project-card img {
-    height: 320px;
-  }
-  .project-info h3 {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .project-card img {
-    height: 330px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1024px) {
-  .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    justify-content: center;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-  }
-
-  .project-card img {
-    height: 350px;
-  }
-
-  .project-info h3 {
-    font-size: 1.1rem;
-  }
-}
-@media (max-width: 800px) {
-  .project-grid {
-    display: grid !important; /* force grid */
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 0 10px;
-  }
-}
-@media (max-width: 450px) {
-  .project-grid {
-    display: grid !important; /* force grid */
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 0 10px;
-  }
-  .project-card img{
-    height: 120px;
-    width: 130px;
-  }
-}
-/* === Fix 2: Hero section font size === */
-@media (max-width:400px) {
-  .hero-text h2 {
-  font-size: 1.3rem !important;
-  line-height: 1.4;
-}
-.hero-text p {
-  font-size: 0.9rem !important;
-}
-
-}
-@media (max-width:1000px) {
-  .hero-text h2 {
-  font-size: 1.3rem !important;
-  line-height: 1.4;
-}
-.hero-text p {
-  font-size: 0.9rem !important;
-}
-
-}
-/* === Fix 3: Projects section card layout === */
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 0 10px;
-}
-.project-info h3 {
-  font-size: 0.9rem;
-  word-wrap: break-word;
-  line-height: 1.2;
-  max-width: 200px;
-  margin: 0 auto;
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .project-info h3 {
-    font-size: 0.85rem;
-  }
-}
-@media(max-width:350px){
-  .footer-bottom p{
-    font-size: 0.70rem;
-  }
-}
-  </style>
  </head>
  <body>
   <script src="first.js" defer></script>
   <header>
    <div class="logo-container">
   <!-- Default image (desktop and larger screens) -->
-   <img alt="Vinayaka Digiverse Logo" class="logo-img desktop-logo" style="width: 25rem;" loading="lazy" src="assets/vdv fulllogo.png"/>
+   <img alt="Vinayaka Digiverse Logo" class="logo-img desktop-logo" style="width: 25rem;" loading="lazy" src="assets/vdv fulllogo-pc.webp"/>
 
 
  <!-- Mobile/Phone logo -->
-  <img alt="Vinayaka Digiverse Mobile Logo" class="logo-img mobile-logo" style="width: 4rem !important; margin-left: 2px;" loading="lazy" src="assets/VDV LOGO HS .png"/>
+  <img alt="Vinayaka Digiverse Mobile Logo" class="logo-img mobile-logo" style="width: 4rem !important; margin-left: 2px;" loading="lazy" src="assets/VDV-LOGO HS-phonne .png"/>
    </div>
    <nav>
     <ul class="navbar">
@@ -424,7 +206,7 @@ body {
   </header>
   <section class="hero">
    <video class="background-video" autoplay muted loop playsinline preload="none" poster="assets/backgroud-iag.mp4">
-    <source src="assets/backgroud-iag.mp4" loading="lazy" preload="auto" type="video/mp4"/>
+    <source src="assets/backgroud-iag(1).mp4" loading="lazy" preload="auto" type="video/mp4"/>
     Your browser does not support the video tag.
    </video>
    <div class="hero-text">
@@ -434,7 +216,7 @@ body {
     <h2>
      IT’S TIME TO TRANSFORM YOUR BRAND INTO
      <br/>
-     <span style="color: #abff25;">
+     <span class="c1">
       POWERFUL FORCES &amp; RANK HIGHER
      </span>
      <br/>
@@ -445,7 +227,7 @@ body {
     </p>
    </div>
    <div class="hero-image">
-    <img alt="Hero Image" loading="lazy"  style="width: 25rem; height: 15rem; " src="assets/admin-writing-code-doing-maintenance-artificial-intelligence-neural-networks.webp"/>
+    <img alt="Hero Image" class="c4" loading="lazy" src="assets/women-2.webp"/>
    </div>
   </section>
   <!--This is for services and navigation-->
@@ -494,49 +276,76 @@ body {
      </span>
     </h2>
 
-    <!--This is code for images for different screen sizes-->
-    <picture>
-  <!-- For small phones -->
-  <source srcset="images/hero-mobile.webp" media="(max-width: 600px)">
-  
-  <!-- For tablets -->
-  <source srcset="images/hero-tablet.webp" media="(max-width: 1200px)">
-  
-  <!-- Default for laptops/desktops -->
-  <img src="images/hero-desktop.webp" 
-       alt="Vinayaka Digiverse - Digital Marketing Services" 
-       width="1920" height="800" 
-       loading="lazy">
-</picture>
-
-
     <div class="service-cards">
      <div class="card">
-      <img alt="Service 1" id="img1" rel = "preload" loading="lazy" src="assets/25025577_7038056.svg"/>
-      <h3>
-       SOCIAL MEDIA <br/> MANAGEMENT
+      <picture>
+  <!-- Phone (max 600px) -->
+  <source srcset="assets/25025577_7038056-phone.webp" media="(max-width:720px)">
+  
+  <!-- Default (tablet + laptop + PC) -->
+  <img src="assets/25025577_7038056.svg" 
+  loading="lazy" 
+       alt="Service 1" 
+       id="img1"
+       id="">
+
+           <h3>
+     SOCIAL MEDIA <br/> MANAGEMENT
+  
+     &amp; MARKETING
+    </h3>
+   </div>
+</picture>
     
-       &amp; MARKETING
-      </h3>
-     </div>
      <div class="card">
-      <img alt="Service 2" id="img2" loading="lazy" src="assets/11641810_4758686 (1).svg"/>
+      <picture>
+  <!-- Phone (max 600px) -->
+  <source srcset="assets/11641810_4758686-phone.webp" media="(max-width:720px)">
+  
+  <!-- Default (tablet + laptop + PC) -->
+  <img src="assets/11641810_4758686.svg" 
+       alt="Service 1" 
+       id="img2"
+       loading="lazy">
+</picture>
       <h3>
        WEBSITE DESIGNING
        <br/>
        &amp;WEBSITE DEVELOPMENT
       </h3>
      </div>
+
+     
      <div class="card">
-      <img alt="Service 3" id="img3" loading="lazy" src="assets/12704402_5000590.svg"/>
+      <picture>
+  <!-- Phone (max 600px) -->
+  <source srcset="assets/12704402_5000590-phone.webp" media="(max-width:720px)">
+  
+  <!-- Default (tablet + laptop + PC) -->
+  <img src="assets/12704402_5000590.svg" 
+       alt="Service 4" id="img3"
+       loading="lazy">
+</picture>
+
       <h3>
        CONTENT WRITING &amp;
        <br/>
        CONTENT CREATION
       </h3>
      </div>
-     <div class="card">
-      <img alt="Service 4" id="img4" loading="lazy" src="assets/7118028_3343971.svg"/>
+
+
+   <div class="card">
+          <picture>
+  <!-- Phone (max 600px) -->
+  <source srcset="assets/7118028_3343971-phone.webp" media="(max-width:720px)">
+  
+  <!-- Default (tablet + laptop + PC) -->
+  <img src="assets/7118028_3343971.svg" 
+       alt="Service 4" id="img4"
+       loading="lazy">
+</picture>
+     
       <h3>
        PROFESSIONAL GRAPHICS DESIGNING  &amp;
        <br/>
@@ -544,7 +353,16 @@ body {
       </h3>
      </div>
      <div class="card">
-      <img alt="Service 5" id="img5" loading="lazy" src="assets/11604301_Video Files.svg"/>
+                <picture>
+  <!-- Phone (max 600px) -->
+  <source srcset="assets/11604301_VideoFiles-phone.webp" media="(max-width:720px)">
+  
+  <!-- Default (tablet + laptop + PC) -->
+  <img src="assets/11604301_VideoFiles.svg" 
+       alt="Service 5" id="img5"
+       loading="lazy">
+</picture>
+     
             <h3>
        PROFESSIONAL VIDEO
        <br/>
@@ -553,7 +371,16 @@ MOTION GRAPHICS EDITING
       </h3>
      </div>
      <div class="card">
-      <img alt="Service 6" id="img6" loading="lazy" src="assets/7140772_3515448.svg"/>
+                      <picture>
+  <!-- Phone (max 600px) -->
+  <source srcset="assets/7140772_3515448-phone.webp" media="(max-width:720px)">
+  
+  <!-- Default (tablet + laptop + PC) -->
+  <img src="assets/7140772_3515448.svg" 
+       alt="Service 5" id="img5"
+       loading="lazy">
+</picture>
+
             <h3>
        PROFESSIONAL PHOTOGRAPHY,
        <br/>
@@ -583,15 +410,25 @@ MOTION GRAPHICS EDITING
    </div>
    <div class="project-grid" style="text-align: center;">
     <a class="project-card" href="project1.html">
-     <img alt="Project 1" loading="lazy" src="assets/technology.webp"/>
+      <picture>
+  <source srcset="assets/technology (1)-phone.webp" media="(max-width:720px)">
+  <img src="assets/technology-pc.webp" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="project-info">
       <h3>
        TECHNOLOGY AND SOFTWARE
       </h3>
      </div>
     </a>
+
     <a class="project-card" href="project3.html">
-     <img alt="Project 3" loading="lazy" src="assets/cafe and restro.webp"/>
+      <picture>
+  <source srcset="assets/cafeandrestro-phone.webp" media="(max-width:720px)">
+  <img src="assets/cafeandrestro-pc.webp" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="project-info">
       <h3>
        CAFES AND RESTAURANTS
@@ -599,7 +436,11 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project4.html">
-     <img alt="Project 4" loading="lazy" src="assets/BankingAndfinance.webp"/>
+      <picture>
+  <source srcset="assets/BankingAndfinance-phone.webp" media="(max-width:720px)">
+  <img src="assets/BankingAndfinance-pc.webp" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="project-info">
       <h3>
        FINANCE AND BANKING
@@ -607,7 +448,11 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project2.html">
-     <img alt="Project 2" loading="lazy" src="assets/healthcare.webp"/>
+      <picture>
+  <source srcset="assets/healthcare-phone.webp" media="(max-width:780px)">
+  <img src="assets/healthcare-pc.webp" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="project-info">
       <h3>
        HEALTHCARE AND PHARMACEUTICALS
@@ -615,7 +460,12 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project5.html">
-     <img alt="Project 5" loading="lazy" src="assets/retailandecom.webp"/>
+      <picture>
+  <source srcset="assets/retailandecom-phone.webp" media="(max-width:720px)">
+  <img src="assets/retailandecom.webp" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="project-info">
       <h3>
        RETAIL AND E-COMMERCE
@@ -623,7 +473,12 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project6.html">
-     <img alt="Project 6" loading="lazy" src="assets/hospitality.webp"/>
+      <picture>
+  <source srcset="assets/hospitality-phone.webp" media="(max-width:720px)">
+  <img src="assets/hospitality.webp" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="project-info">
       <h3>
        HOSPITALITY AND TRAVEL MANAGEMENT
@@ -631,7 +486,12 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project7.html">
-     <img alt="Project 7" loading="lazy" src="assets/automotivecomapanies.webp"/>
+      <picture>
+  <source srcset="assets/automotivecomapanies-phone.webp" media="(max-width:720px)">
+  <img src="assets/automotivecomapanies.webp" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="project-info">
       <h3>
        AUTOMOTIVE COMPANIES
@@ -639,7 +499,12 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project8.html">
-     <img alt="Project 8" src="assets/fashion.webp"/>
+      <picture>
+  <source srcset="assets/fashion-phone.webp" media="(max-width:720px)">
+  <img src="assets/fashion.webp" alt="Service 2" loading="lazy">
+</picture>
+
+    
      <div class="project-info">
       <h3>
        FASHION AND APPAREL BRANDS
@@ -647,7 +512,12 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project9.html">
-     <img alt="Project 9" src="assets/realestate.webp"/>
+      <picture>
+  <source srcset="assets/realestate-phone.webp" media="(max-width:720px)">
+  <img src="assets/realestate.webp" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="project-info">
       <h3>
        REAL ESTATE AGENCIES
@@ -655,7 +525,12 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project10.html">
-     <img alt="Project 10" src="assets/educational .webp"/>
+      <picture>
+  <source srcset="assets/educational-phone.webp" media="(max-width:720px)">
+  <img src="assets/educational .webp" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="project-info">
       <h3>
        EDUCATIONAL INSTITUTIONS
@@ -663,7 +538,11 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project11.html">
-     <img alt="Project 11" loading="lazy" src="assets/legaland awfirms.webp"/>
+      <picture>
+  <source srcset="assets/legalandlawfirms-phone.webp" media="(max-width:720px)">
+  <img src="assets/legalandlawfirms.webp" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="project-info">
       <h3>
        LEGAL AND LAW FIRMS
@@ -671,7 +550,12 @@ MOTION GRAPHICS EDITING
      </div>
     </a>
     <a class="project-card" href="project12.html">
-     <img alt="Project 12" loading="lazy" src="assets/fitnessclubs.webp"/>
+      <picture>
+  <source srcset="assets/fitnessclubs-phone.webp" media="(max-width:720px)">
+  <img src="assets/fitnessclubs.webp" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="project-info">
       <h3>
        FITNESS CLUBS(GYMS)
@@ -685,7 +569,12 @@ MOTION GRAPHICS EDITING
    <div class="container">
     <div class="about-content">
      <div class="about-left">
-      <img alt="Team Working" class="about-img" loading="lazy" src="assets/about-company.webp">
+      <picture>
+  <source srcset="assets/about-company-phone.webp" media="(max-width:720px)">
+  <img src="assets/about-company.webp" alt="Service 2" loading="lazy">
+</picture>
+
+    
        <div class="project-complete">
         <span>
          112+
@@ -797,7 +686,7 @@ that meet your business needs.
 <section style="text-align: left;" class="business-website-section">
   <div class="business-content">
     <div class="business-text">
-      <span class="section-label">REASON</span>
+      <span class="section-label" style="background-color: black;" >SERVICE</span>
       <h2>Why You Really <br>Need Our Services?</h2>
       <ul>
         <li style="text-align: left;">Boost Your Online Presence</li>
@@ -810,11 +699,15 @@ that meet your business needs.
         <li style="text-align: left;">Marketing & Advertising Made Easy</li>
 
         <br><br>
-        <span class="section-label" ><a style="color: white; text-decoration: none;" href="../public/Contact us/contact.html">GET YOUR FREE CONSULTATION</a></span>
+        <span class="section-label" id="c2"><a href="../public/Contact us/contact.html">GET YOUR FREE CONSULTATION</a></span>
       </ul>
     </div>
     <div class="business-image">
-      <img src="assets/11434263_4706357.jpg" alt="Why Need Website" />
+      <picture>
+  <source srcset="assets/11434263_4706357-phone.webp" media="(max-width:720px)">
+  <img src="assets/11434263_4706357.jpg" alt="Why Need Website" loading="lazy">
+</picture>
+
     </div>
   </div>
 </section>
@@ -826,7 +719,12 @@ that meet your business needs.
    </h2>
    <div class="testimonial-carousel">
     <div class="testimonial-slide active">
-     <img alt="Client 1" loading="lazy" src="assets/soamesh.jpg"/>
+      <picture>
+  <source srcset="assets/soamesh-phone.webp" media="(max-width:720px)">
+  <img src="assets/soamesh.jpg" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="stars">
       ★★★★★
      </div>
@@ -838,7 +736,11 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 2" loading="lazy" src="assets/kartik.jpg"/>
+      <picture>
+  <source srcset="assets/kartik.-phonewebp.webp" media="(max-width:720px)">
+  <img src="assets/kartik.jpg" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="stars">
       ★★★★★
      </div>
@@ -850,7 +752,12 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 3" loading="lazy" src="assets/muskan.jpg"/>
+      <picture>
+  <source srcset="assets/muskan-phone.webp" media="(max-width:720px)">
+  <img src="assets/muskan.jpg" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="stars">
       ★★★★☆
      </div>
@@ -862,7 +769,11 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" loading="lazy" src="assets/reshma.jpg"/>
+            <picture>
+  <source srcset="assets/reshma-phone.webp" media="(max-width:720px)">
+  <img src="assets/reshma.jpg" alt="client 4" loading="lazy">
+</picture>
+
      <div class="stars">
       ★★★★☆
      </div>
@@ -874,7 +785,11 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" loading="lazy" src="assets/test1.jpg"/>
+      <picture>
+  <source srcset="assets/test1-phone.webp" media="(max-width:720px)">
+  <img src="assets/test1.jpg" alt="client 5" loading="lazy">
+</picture>
+
      <div class="stars">
       ★★★★☆
      </div>
@@ -886,7 +801,11 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" loading="lazy" src="assets/test2.jpg"/>
+      <picture>
+  <source srcset="assets/test2-phone.webp" media="(max-width:720px)">
+  <img src="assets/test2.jpg" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="stars">
       ★★★★☆
      </div>
@@ -898,7 +817,12 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" loading="lazy" src="assets/test3.jpg"/>
+      <picture>
+  <source srcset="assets/test3-phone.webp" media="(max-width:720px)">
+  <img src="assets/test3.jpg" alt="Service 2" loading="lazy">
+</picture>
+
+     
      <div class="stars">
       ★★★★☆
      </div>
@@ -910,7 +834,12 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" loading="lazy" src="assets/test4.jpg"/>
+      <picture>
+  <source srcset="assets/test4.-phonewebp.webp" media="(max-width:720px)">
+  <img src="assets/test4.jpg" alt="Service 2" loading="lazy">
+</picture>
+
+ 
      <div class="stars">
       ★★★★☆
      </div>
@@ -922,7 +851,12 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" loading="lazy" src="assets/test5.jpg"/>
+      <picture>
+  <source srcset="assets/test5-phone.webp" media="(max-width:720px)">
+  <img src="assets/test5.jpg" alt="Service 2" loading="lazy">
+</picture>
+
+   
      <div class="stars">
       ★★★★☆
      </div>
@@ -934,7 +868,11 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" loading="lazy" src="assets/test6.jpg"/>
+      <picture>
+  <source srcset="assets/test6-phone.webp" media="(max-width:720px)">
+  <img src="assets/test6.jpg" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="stars">
       ★★★★☆
      </div>
@@ -946,7 +884,11 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" loading="lazy" src="assets/test7.jpg"/>
+      <picture>
+  <source srcset="assets/test7-phone.webp" media="(max-width:720px)">
+  <img src="assets/test7.jpg" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="stars">
       ★★★★☆
      </div>
@@ -958,7 +900,11 @@ that meet your business needs.
      </h4>
     </div>
     <div class="testimonial-slide">
-     <img alt="Client 4" src="assets/test8.jpg"/>
+      <picture>
+  <source srcset="assets/test8-phone.webp" media="(max-width:720px)">
+  <img src="assets/test8.jpg" alt="Service 2" loading="lazy">
+</picture>
+
      <div class="stars">
       ★★★★☆
      </div>
@@ -978,6 +924,7 @@ that meet your business needs.
     </button>
    </div>
   </section>
+
   <!--FAQ SECTION-->
   <div class="faq-section">
    <div class="faq-title">
@@ -1122,10 +1069,12 @@ that meet your business needs.
          </i>
         </div>
 
-        <p style="font-size: 0.70rem !important; text-align: left;">
+        <p style="font-size: 0.80rem !important; text-align: left;">
          Branch 1:– INDORE -452009 (M.P)
-         <br/>
+         <br/><br>
          Branch 2:– NAGPUR -440027 (M.H)
+         <br><br>
+         Branch 3:– MUMBAI -421002 (M.H)
         </p>
       
 
@@ -1138,23 +1087,23 @@ that meet your business needs.
       <h4>
        Quick Link
       </h4>
-      <ul>
-       <a href="index.html" style="color: white; text-decoration: none; ">
-        <li>
+      <ul class="c3">
+       <a href="index.html" >
+        <li style="text-decoration: none;">
          Home
         </li>
        </a>
-       <a href="about-us.html" style="color: white; text-decoration: none;">
+       <a href="about-us.html">
         <li>
          About Us
         </li>
        </a>
-       <a href="Blog/blog.html" style="color: white; text-decoration: none;">
+       <a href="Blog/blog.html">
         <li>
          Blogs
         </li>
        </a>
-       <a href="Pricing/Pricing.html" style="color: white; text-decoration: none;">
+       <a href="Pricing/Pricing.html">
         <li>
          Pricing
         </li>
@@ -1165,33 +1114,33 @@ that meet your business needs.
       <h4>
        Services
       </h4>
-      <ul>
-       <a href="Solutions/SMM&amp;M.html" style="color: white; text-decoration: none;">
+      <ul class="c3">
+       <a href="Solutions/SMM&amp;M.html" >
         <li>
          SOCIAL MEDIA MARKETING
         </li>
        </a>
-       <a href="Solutions/Website design.html" style="color: white; text-decoration: none;">
+       <a href="Solutions/Website design.html" >
         <li>
          WEB DEVELOPMENT
         </li>
        </a>
-       <a href="Solutions/content writing.html" style="color: white; text-decoration: none;">
+       <a href="Solutions/content writing.html" >
         <li>
          CONTENT WRITING
         </li>
        </a>
-       <a href="Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;">
+       <a href="Solutions/PROFESSIONAL GRAPHICS.html">
         <li>
          GRAPHICS DESIGNING
         </li>
        </a>
-       <a href="Solutions/professional photography.html" style="color: white; text-decoration: none;">
+       <a href="Solutions/professional photography.html">
         <li>
          PHOTOGRAPHY &amp; VIDEOGRAPHY
         </li>
        </a>
-       <a href="Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;">
+       <a href="Solutions/PROFESSIONAL VIDEO EDITING.html" >
         <li>
          VIDEO EDITING
         </li>
@@ -1202,18 +1151,18 @@ that meet your business needs.
       <h4>
        Support
       </h4>
-      <ul>
-       <a href="index.html" style="color: white; text-decoration: none;">
+      <ul class="c3">
+       <a href="index.html" >
         <li>
          Privacy Policy
         </li>
        </a>
-       <a href="index.html" style="color: white; text-decoration: none;">
+       <a href="index.html" >
         <li>
          Refund Policy
         </li>
        </a>
-       <a href="Contact us/contact.html" style="color: white; text-decoration: none;">
+       <a href="Contact us/contact.html">
         <li>
          Contact Us
         </li>
@@ -1227,11 +1176,11 @@ that meet your business needs.
      © Vinayaka Digiverse All Rights Reserved.
     </p>
     <div class="social-icons">
-     <a href="https://www.facebook.com/share/1GWHiZvbAm/" target="_blank">
+     <a href="https://www.facebook.com/share/1AFN7jvPKs/" target="_blank">
       <i class="fab fa-facebook">
       </i>
      </a>
-     <a href="https://www.instagram.com/vdv__marketing?igsh=MTFjdndvZXN3aXpmMg==" target="_blank">
+     <a href="https://www.instagram.com/vinayaka_digiverse?igsh=MXd3aTZsczZtYWE3OQ==" target="_blank">
       <i class="fab fa-instagram">
       </i>
      </a>
