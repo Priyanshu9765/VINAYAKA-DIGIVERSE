@@ -406,7 +406,7 @@
   color: black;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .about-header h1 {
     font-size: 1.6rem;
   }
@@ -467,7 +467,7 @@
 
 
   /* ✅ Responsive Fixes */
-    @media (max-width: 480px) {
+    @media (max-width: 700px) {
 
    .services-box {
     flex-direction: column;
@@ -515,15 +515,161 @@
         font-size: 2rem;
       }
     }
+
+        /*for 780px*/
+
+ /* ✅ Responsive Fixes */
+@media (min-width:500px) and (max-width:700px){
+
+/* Services layout */
+.services-box{
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Software we use box */
+.programming-column{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+
+  max-width:120px;
+  width:100%;
+
+  margin:25px auto;
+  padding:18px 10px;
+  gap:12px;
+
+  background:white;
+  border-radius:20px;
+}
+
+/* Icons column */
+.language-icons{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+
+/* ICON SIZE */
+.language-icons img{
+  width:45px;
+  height:auto;
+}
+
+/* Vertical text */
+.vertical-text{
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  font-size:0.85rem;
+  font-weight:700;
+  letter-spacing:1px;
+  color:black;
+}
+
+/* List text */
+.services-box li{
+  font-size:1.3rem;
+  line-height:2rem;
+}
+
+/* Titles */
+.web-services h2{
+  font-size:1.8rem;
+}
+
+.web-services h3{
+  font-size:1.6rem;
+}
+
+.about-header h1{
+  font-size:2rem;
+}
+
+}
+   /*for large screen size */
+   @media (min-width:700px) and (max-width:900px){
+
+/* Services layout */
+.services-box{
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Software we use box */
+.programming-column{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+
+  max-width:150px;
+  width:100%;
+
+  margin:30px auto;
+  padding:22px 12px;
+  gap:16px;
+
+  background:white;
+  border-radius:24px;
+}
+
+/* Icons column */
+.language-icons{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:16px;
+}
+
+/* ICON SIZE (bigger than 500–700) */
+.language-icons img{
+  width:55px;
+  height:auto;
+}
+
+/* Vertical text */
+.vertical-text{
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  font-size:1rem;
+  font-weight:700;
+  letter-spacing:1.5px;
+  color:black;
+}
+
+/* List text bigger */
+.services-box li{
+  font-size:1.5rem;
+  line-height:2.3rem;
+}
+
+/* Titles bigger */
+.web-services h2{
+  font-size:2rem;
+}
+
+.web-services h3{
+  font-size:1.8rem;
+}
+
+.about-header h1{
+  font-size:2.2rem;
+}
+
+}
+ 
   </style>
 </head>
 <body>
 
-  <div class="about-header">
+  <div class="about-header" id="pg2">
     <h1>PROFESSIONAL GRAPHICS DESIGN & <br><span>PREMIUM PRINTING</span></h1>
   </div>
-  <section class="web-page">
-  <div class="web-services">
+  <section class="web-page" id="pg3">
+  <div class="web-services" id="pg1">
     <h2>GRAPHICS DESIGNING & PRINTING</h2>
     <h3>GRAPHICS DESIGNING SERVICES</h3>
     <div class="services-box">
